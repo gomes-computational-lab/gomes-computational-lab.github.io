@@ -1,37 +1,50 @@
 [
   {
-    "title": "IVCF Filter Detection using AI",
-    "image": "assets/projects/ivcf.jpg",
-    "abstract": "Deep learning models (e.g., Swin-UNet) to detect and segment inferior vena cava filters on CT, enabling automated registry curation and complication monitoring.",
-    "tools": ["Python", "PyTorch", "Swin-UNet", "MONAI", "DICOM"],
-    "students": ["Ian Nie", "Mykle Buhrow"]
-  },
-  {
-    "title": "PDAC Diagnosis using Deep Learning",
+    "title": "AI for Pancreatic Cancer Imaging",
+    "status": "current",
     "image": "assets/projects/pdac-ct.jpg",
-    "abstract": "Supervised 2D/3D CNNs on CT for pancreatic ductal adenocarcinoma detection and treatment outcome prediction; interpretable models for clinical use.",
-    "tools": ["Python", "PyTorch", "Grad-CAM", "scikit-image"],
-    "students": ["Will Jerome", "Adeel Siddiqi", "Anya Ranavat"]
+    "abstract": "Developing deep-learning methods for pancreatic cancer analysis from CT imaging, including multi-structure segmentation, tumor detection, anomaly detection, uncertainty estimation, and synthetic medical imaging. Current work investigates pancreas, tumor, duct, vascular, and surrounding anatomical structures to support computer-assisted diagnosis and quantitative analysis.",
+    "tools": ["PyTorch", "MONAI", "nnU-Net", "Medical Imaging", "CT", "Deep Learning"]
   },
   {
-    "title": "PDAC and scRNA-seq Analysis",
+    "title": "Cancer Genomics and Multi-Omics",
+    "status": "current",
     "image": "assets/projects/scrna.jpg",
-    "abstract": "Single-cell RNA-seq integration to characterize PDAC tumor microenvironment; pathway and trajectory analysis to identify actionable targets.",
-    "tools": ["Scanpy", "Seurat", "Python/R", "HPC"],
-    "students": ["Paige Keller", "Amanda Warren"]
+    "abstract": "Developing machine-learning approaches for pancreatic cancer characterization using DNA methylation, gene-expression, and single-cell data. Current work investigates class imbalance, feature selection, cancer-associated genes, pathway enrichment, and integration of molecular data for improved disease characterization.",
+    "tools": ["Python", "R", "DNA Methylation", "RNA-seq", "scRNA-seq", "Machine Learning", "HPC"]
   },
   {
-    "title": "CABG Outcomes (On-pump vs Off-pump)",
+    "title": "GeoFarmAI: AI for Precision Agriculture",
+    "status": "current",
+    "image": "assets/projects/geospatial.jpg",
+    "abstract": "Developing AI and geospatial methods for data-driven management-zone delineation in precision agriculture. GeoFarmAI integrates yield, soil, terrain, and remote-sensing data using spatial analysis, dimensionality reduction, and clustering to produce interpretable field management zones for precision agriculture.",
+    "tools": ["Python", "Geospatial AI", "GIS", "Remote Sensing", "Machine Learning", "Precision Agriculture"]
+  },
+  {
+    "title": "AI-Driven Immersive Nursing Simulation",
+    "status": "current",
+    "abstract": "Developing a multi-agent, AI-driven simulation environment for nursing education. The system uses locally hosted language models to simulate patients, family members, and clinical personnel, enabling adaptive communication scenarios and automated assessment of clinical communication, de-escalation, and decision-making.",
+    "tools": ["LLMs", "Multi-Agent AI", "Ollama", "Simulation", "Healthcare AI", "Immersive Computing"]
+  },
+  {
+    "title": "CABG Outcomes and Clinical Decision Support",
+    "status": "current",
     "image": "assets/projects/cabg.jpg",
     "abstract": "Retrospective analysis of CABG outcomes using ML for risk stratification and protocol optimization across institutional cohorts.",
-    "tools": ["Python", "pandas", "XGBoost", "SHAP"],
-    "students": ["Samuel Morehead", "Gabriel Tapia"]
+    "tools": ["Python", "pandas", "XGBoost", "SHAP"]
   },
   {
-    "title": "RAG in Healthcare",
+    "title": "IVC Filter Detection and Complication Assessment",
+    "status": "previous",
+    "image": "assets/projects/ivcf.jpg",
+    "abstract": "Deep-learning and medical-image-analysis methods for detecting and segmenting inferior vena cava filters in CT imaging and supporting automated assessment of filter-related complications.",
+    "tools": ["Python", "PyTorch", "Swin-UNet", "MONAI", "DICOM"]
+  },
+  {
+    "title": "Retrieval-Augmented Generation in Healthcare",
+    "status": "previous",
     "image": "assets/projects/rag.jpg",
     "abstract": "Retrieval-augmented generation for clinical documentation and patient education; guardrails and privacy-aware pipelines for safe deployment.",
-    "tools": ["LangChain", "LlamaIndex", "Vector DB", "OpenAI/OSS LLMs"],
-    "students": ["Clara Bartlett", "Will Jerome"]
+    "tools": ["LangChain", "LlamaIndex", "Vector DB", "OpenAI/OSS LLMs"]
   }
 ]

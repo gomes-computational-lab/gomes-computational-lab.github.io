@@ -16,14 +16,26 @@
 
 <main>
   <div class="container">
-    <h2>Research Projects</h2>
+    <section class="research-section" aria-labelledby="current-research-title">
+      <h2 id="current-research-title">Current Research</h2>
+      <p>
+        My research focuses on artificial intelligence and high-performance computing, with applications in healthcare, precision agriculture, and scientific computing.
+      </p>
+
     <div class="searchbar">
-      <input id="projSearch" type="search" placeholder="Search projects, tools, students..."/>
+        <input id="projSearch" type="search" placeholder="Search current and previous research..." aria-label="Search current and previous research"/>
     </div>
 
-    <!-- 2-col responsive grid (script.js will fill this) -->
-    <section id="projectsGrid" class="projects-grid">
-      <div class="card"><p style="color:#666;font-style:italic;">Loading…</p></div>
+      <div id="currentProjectsGrid" class="projects-grid">
+        <div class="card"><p style="color:#666;font-style:italic;">Loading…</p></div>
+      </div>
+    </section>
+
+    <section class="research-section" aria-labelledby="previous-research-title">
+      <h2 id="previous-research-title">Previous Research</h2>
+      <div id="previousProjectsGrid" class="projects-grid">
+        <div class="card"><p style="color:#666;font-style:italic;">Loading…</p></div>
+      </div>
     </section>
   </div>
 </main>

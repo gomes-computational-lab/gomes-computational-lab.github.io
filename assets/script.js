@@ -216,65 +216,52 @@ async function loadGrants() {
 }
 
 async function loadProjects() {
-  const grid = document.getElementById("projectsGrid");
-  if (grid) grid.innerHTML = `<div class="card"><p style="color:#666;font-style:italic;">Loading…</p></div>`;
+  const currentGrid = document.getElementById("currentProjectsGrid");
+  const previousGrid = document.getElementById("previousProjectsGrid");
+  const grids = [currentGrid, previousGrid].filter(Boolean);
+  grids.forEach(grid => {
+    grid.innerHTML = `<div class="card"><p style="color:#666;font-style:italic;">Loading…</p></div>`;
+  });
 
   const data = await fetchJSON("data/research.json");
-  if (!grid) return;
+  if (!currentGrid || !previousGrid) return;
   if (!data || !Array.isArray(data) || data.length === 0) {
-    grid.innerHTML = `<div class="card"><p style="color:#999;font-style:italic;">No content found.</p></div>`;
+    grids.forEach(grid => {
+      grid.innerHTML = `<div class="card"><p style="color:#999;font-style:italic;">No content found.</p></div>`;
+    });
     return;
-  }
-
-  // Random student pool (used if a project has no students listed)
-  const studentPool = [
-    "Alex Rolli","Brayden Mau","Pavithra Mohan","Connor Kamrowski","Jordan Langlois","Isabella Doss",
-    "Nichol He","Papia Rozario","Minhaz Chowdhury","Nafiz Rifat","Mostofa Ahsan","Sudeep Bhattacharyay",
-    "Ying Ma","Abhimanyu Ghosh","Westin Impola","Grace McDonnell","Junsu Lee","Paige Keller"
-  ];
-  function pickRandomStudents(n = 3) {
-    const pool = [...studentPool];
-    const chosen = [];
-    while (chosen.length < n && pool.length) {
-      chosen.push(pool.splice(Math.floor(Math.random() * pool.length), 1)[0]);
-    }
-    return chosen;
   }
 
   const searchEl = document.getElementById("projSearch");
 
-  function render() {
-    const q = (searchEl?.value || "").toLowerCase().trim();
-    const items = q
-      ? data.filter(p =>
-          (p.title || "").toLowerCase().includes(q) ||
-          (p.abstract || "").toLowerCase().includes(q) ||
-          (p.tools || []).join(" ").toLowerCase().includes(q) ||
-          (p.students || []).join(" ").toLowerCase().includes(q)
-        )
-      : data;
-
+  function renderGrid(grid, items, emptyMessage) {
     grid.innerHTML = "";
     if (!items.length) {
-      grid.innerHTML = `<div class="card"><p style="color:#999;font-style:italic;">No matching projects.</p></div>`;
+      grid.innerHTML = `<div class="card"><p style="color:#999;font-style:italic;">${emptyMessage}</p></div>`;
       return;
     }
 
     items.forEach(p => {
-      const studs = (p.students && p.students.length) ? p.students : pickRandomStudents(3);
       const tools = Array.isArray(p.tools) ? p.tools : [];
 
       const card = document.createElement("article");
       card.className = "card project-card";
 
-      // image (with placeholder fallback)
       const thumb = document.createElement("div");
       thumb.className = "thumb";
-      const img = document.createElement("img");
-      img.src = p.image || "assets/projects/placeholder.jpg";
-      img.alt = p.title || "Project image";
-      img.onerror = () => { img.style.display = "none"; thumb.style.background = "#eef1f5"; };
-      thumb.appendChild(img);
+      if (p.image) {
+        const img = document.createElement("img");
+        img.src = p.image;
+        img.alt = p.title || "Project image";
+        img.loading = "lazy";
+        img.onerror = () => {
+          img.remove();
+          thumb.classList.add("thumb-placeholder");
+        };
+        thumb.appendChild(img);
+      } else {
+        thumb.classList.add("thumb-placeholder");
+      }
 
       card.appendChild(thumb);
       card.appendChild(el("h3", {}, [p.title || "Untitled Project"]));
@@ -288,14 +275,25 @@ async function loadProjects() {
       if (!tools.length) meta.appendChild(el("span", { class: "badge" }, ["—"]));
       card.appendChild(meta);
 
-      card.appendChild(el("div", { class: "section-title" }, ["Students"]));
-      const studsWrap = document.createElement("div");
-      studsWrap.className = "project-meta";
-      studs.forEach(s => studsWrap.appendChild(el("span", { class: "badge" }, [s])));
-      card.appendChild(studsWrap);
-
       grid.appendChild(card);
     });
+  }
+
+  function render() {
+    const q = (searchEl?.value || "").toLowerCase().trim();
+    const items = q
+      ? data.filter(p =>
+          (p.title || "").toLowerCase().includes(q) ||
+          (p.abstract || "").toLowerCase().includes(q) ||
+          (Array.isArray(p.tools) ? p.tools : []).join(" ").toLowerCase().includes(q)
+        )
+      : data;
+
+    const current = items.filter(p => (p.status || "").toLowerCase() === "current");
+    const previous = items.filter(p => (p.status || "").toLowerCase() === "previous");
+
+    renderGrid(currentGrid, current, q ? "No matching current research." : "No current research found.");
+    renderGrid(previousGrid, previous, q ? "No matching previous research." : "No previous research found.");
   }
 
   searchEl?.addEventListener("input", render);
@@ -466,7 +464,6 @@ function escapeAttr(s){
             console.log(`No loader defined yet for ${page}`);
     }
 });
-
 
 
 
