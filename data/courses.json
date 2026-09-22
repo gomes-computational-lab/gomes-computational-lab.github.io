@@ -1,6 +1,6 @@
 {
   "current_semester": {
-    "term": "Fall 2025",
+    "term": "Fall 2026",
     "courses": [
       {
         "code": "CS 426",
@@ -9,18 +9,26 @@
         "badges": ["Python", "PyTorch", "TensorFlow", "CNNs/RNNs"],
         "notes": "Project-based; medical imaging and NLP examples.",
         "image": "assets/courses/cs426.jpg"
-      },
-      {
-        "code": "CS 330",
-        "title": "Programming Languages",
-        "short": "Design principles and paradigms; emphasis on learning new languages and C++ internals.",
-        "badges": ["Paradigms", "C++", "Runtime/Memory", "Type Systems"],
-        "notes": "Language survey + deeper dive in C++.",
-        "image": "assets/courses/cs330.jpg"
       }
     ]
   },
   "past_offerings": [
+    {
+      "code": "CS 330",
+      "title": "Programming Languages",
+      "short": "Design principles and paradigms; emphasis on learning new languages and C++ internals.",
+      "badges": ["Paradigms", "C++", "Runtime/Memory", "Type Systems"],
+      "notes": "Language survey + deeper dive in C++.",
+      "image": "assets/courses/cs330.jpg"
+    },
+    {
+      "code": "CS 426",
+      "title": "Deep Learning",
+      "short": "Foundations and applications of deep learning; modern model training and interpretation.",
+      "badges": ["Python", "PyTorch", "TensorFlow", "CNNs/RNNs"],
+      "notes": "Project-based; medical imaging and NLP examples.",
+      "image": "assets/courses/cs426.jpg"
+    },
     {
       "code": "CS 268",
       "title": "Web Systems",

@@ -3,36 +3,81 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Research — Rahul Gomes</title>
+  <title>Research &amp; Students — Rahul Gomes</title>
   <link rel="stylesheet" href="assets/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;family=Merriweather:wght@400;700&amp;display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="research-page">
   
 <div id="site-header"></div>
 
 
 <main>
-  <div class="container">
-    <section class="research-section" aria-labelledby="current-research-title">
-      <h2 id="current-research-title">Current Research</h2>
-      <p>
-        My research focuses on artificial intelligence and high-performance computing, with applications in healthcare, precision agriculture, and scientific computing.
-      </p>
+  <div class="container research-page-container">
+    <header class="research-page-intro">
+      <div class="kicker">Gomes Computational Lab</div>
+      <h2 id="research-students-title">Research &amp; Students</h2>
+      <p>The Gomes Computational Lab develops artificial intelligence, machine learning, and high-performance computing methods for healthcare and biomedical research. Our work spans medical imaging, cancer genomics, clinical decision support, and AI-enabled healthcare systems, with additional interdisciplinary collaborations in scientific and geospatial computing.</p>
+      <nav class="research-anchor-links" aria-label="Research and students page sections">
+        <a href="#projects">Current Projects</a>
+        <a href="#students">Past Students</a>
+        <a href="#previous-research">Previous Research</a>
+      </nav>
+    </header>
 
-    <div class="searchbar">
-        <input id="projSearch" type="search" placeholder="Search current and previous research..." aria-label="Search current and previous research"/>
-    </div>
+    <section id="projects" class="research-section" aria-labelledby="current-research-title">
+      <h3 id="current-research-title">Current Research Projects</h3>
+      <p>Current undergraduate researchers are listed with the projects they are helping advance.</p>
 
-      <div id="currentProjectsGrid" class="projects-grid">
-        <div class="card"><p style="color:#666;font-style:italic;">Loading…</p></div>
+      <div class="searchbar research-searchbar">
+        <input id="projSearch" type="search" placeholder="Search projects, students, collaborators, or technologies…" aria-label="Search projects, students, collaborators, or technologies" aria-controls="healthcareProjectsGrid collaborationProjectsGrid previousProjectsGrid pastStudentsGrid" />
       </div>
+
+      <section class="research-project-group research-project-group-primary" aria-labelledby="healthcare-research-title">
+        <div class="research-project-group-heading">
+          <div class="kicker">Primary research focus</div>
+          <h4 id="healthcare-research-title">AI for Healthcare &amp; Biomedical Research</h4>
+        </div>
+        <div id="healthcareProjectsGrid" class="projects-grid">
+          <div class="card"><p style="color:#666;font-style:italic;">Loading…</p></div>
+        </div>
+      </section>
+
+      <section class="research-project-group research-project-group-collaboration" aria-labelledby="collaborations-title">
+        <div class="research-project-group-heading">
+          <div class="kicker">Collaborative work</div>
+          <h4 id="collaborations-title">Interdisciplinary Collaborations</h4>
+        </div>
+        <div id="collaborationProjectsGrid" class="projects-grid collaboration-projects-grid">
+          <div class="card"><p style="color:#666;font-style:italic;">Loading…</p></div>
+        </div>
+      </section>
     </section>
 
-    <section class="research-section" aria-labelledby="previous-research-title">
-      <h2 id="previous-research-title">Previous Research</h2>
+    <section id="students" class="research-section past-students-section" aria-labelledby="past-students-title">
+      <h3 id="past-students-title">Past Students</h3>
+      <p>Former undergraduate researchers who played active roles in the Gomes Computational Lab.</p>
+      <ul id="pastStudentsGrid" class="past-students-grid">
+        <li class="past-student" data-name="Alexandra Rolli">Alexandra Rolli</li>
+        <li class="past-student" data-name="Brayden Mau">Brayden Mau</li>
+        <li class="past-student" data-name="Jordan Langlois">Jordan Langlois</li>
+        <li class="past-student" data-name="Connor Kamrowski">Connor Kamrowski</li>
+        <li class="past-student" data-name="Nichol He">Nichol He</li>
+        <li class="past-student" data-name="Cameron Senor">Cameron Senor</li>
+        <li class="past-student" data-name="Aaron Huber">Aaron Huber</li>
+        <li class="past-student" data-name="Nijhum Paul">Nijhum Paul</li>
+        <li class="past-student" data-name="Matthew DeWitte">Matthew DeWitte</li>
+        <li class="past-student" data-name="Paige Keller">Paige Keller</li>
+        <li class="past-student" data-name="Zac Caterer">Zac Caterer</li>
+        <li class="past-student" data-name="Kaia Hanson">Kaia Hanson</li>
+      </ul>
+      <p id="pastStudentsEmpty" class="research-empty" hidden>No matching past students.</p>
+    </section>
+
+    <section id="previous-research" class="research-section" aria-labelledby="previous-research-title">
+      <h3 id="previous-research-title">Previous Research</h3>
       <div id="previousProjectsGrid" class="projects-grid">
         <div class="card"><p style="color:#666;font-style:italic;">Loading…</p></div>
       </div>

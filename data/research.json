@@ -2,49 +2,86 @@
   {
     "title": "AI for Pancreatic Cancer Imaging",
     "status": "current",
+    "group": "healthcare",
+    "anchor": "pdac",
     "image": "assets/projects/pdac-ct.jpg",
     "abstract": "Developing deep-learning methods for pancreatic cancer analysis from CT imaging, including multi-structure segmentation, tumor detection, anomaly detection, uncertainty estimation, and synthetic medical imaging. Current work investigates pancreas, tumor, duct, vascular, and surrounding anatomical structures to support computer-assisted diagnosis and quantitative analysis.",
-    "tools": ["PyTorch", "MONAI", "nnU-Net", "Medical Imaging", "CT", "Deep Learning"]
+    "tools": ["PyTorch", "MONAI", "nnU-Net", "Medical Imaging", "CT", "Deep Learning"],
+    "collaborators": [
+      "Mayo Clinic - Department of Gastroenterology and Hepatology",
+      "Wes Parker — University of California, San Diego (UCSD)",
+      "Harsha Pillaresetti — University of California, Santa Barbara (UCSB)"
+    ],
+    "students": ["Caleb Smock", "Landon Dierkes"]
   },
   {
     "title": "Cancer Genomics and Multi-Omics",
     "status": "current",
+    "group": "healthcare",
+    "anchor": "cancer-genomics",
     "image": "assets/projects/scrna.jpg",
     "abstract": "Developing machine-learning approaches for pancreatic cancer characterization using DNA methylation, gene-expression, and single-cell data. Current work investigates class imbalance, feature selection, cancer-associated genes, pathway enrichment, and integration of molecular data for improved disease characterization.",
-    "tools": ["Python", "R", "DNA Methylation", "RNA-seq", "scRNA-seq", "Machine Learning", "HPC"]
+    "tools": ["Python", "R", "DNA Methylation", "RNA-seq", "scRNA-seq", "Machine Learning", "HPC"],
+    "collaborators": ["Masonic Cancer Center, University of Minnesota"]
   },
   {
-    "title": "GeoFarmAI: AI for Precision Agriculture",
+    "title": "IVC Filter Detection and Complication Assessment",
     "status": "current",
-    "image": "assets/projects/geospatial.jpg",
-    "abstract": "Developing AI and geospatial methods for data-driven management-zone delineation in precision agriculture. GeoFarmAI integrates yield, soil, terrain, and remote-sensing data using spatial analysis, dimensionality reduction, and clustering to produce interpretable field management zones for precision agriculture.",
-    "tools": ["Python", "Geospatial AI", "GIS", "Remote Sensing", "Machine Learning", "Precision Agriculture"]
+    "group": "healthcare",
+    "anchor": "ivc-filter-ai",
+    "image": "assets/projects/ivcf.jpg",
+    "abstract": "Deep-learning and medical-image-analysis methods for detecting and segmenting inferior vena cava filters in CT imaging and supporting automated assessment of filter-related complications.",
+    "tools": ["Python", "PyTorch", "Swin-UNet", "MONAI", "DICOM"],
+    "collaborators": ["Mayo Clinic Health System — Interventional Radiology"],
+    "students": [
+      "Ian Nie",
+      "Mykle Buhrow",
+      "Sophie Vu — Penn State",
+      "Samidha Nageshwar — University of Maryland"
+    ]
   },
   {
-    "title": "AI-Driven Immersive Nursing Simulation",
+    "title": "NurseAI: AI-Driven Immersive Nursing Simulation",
     "status": "current",
+    "group": "healthcare",
+    "anchor": "nurseai",
     "abstract": "Developing a multi-agent, AI-driven simulation environment for nursing education. The system uses locally hosted language models to simulate patients, family members, and clinical personnel, enabling adaptive communication scenarios and automated assessment of clinical communication, de-escalation, and decision-making.",
-    "tools": ["LLMs", "Multi-Agent AI", "Ollama", "Simulation", "Healthcare AI", "Immersive Computing"]
+    "tools": ["LLMs", "Multi-Agent AI", "Ollama", "Simulation", "Healthcare AI", "Immersive Computing"],
+    "collaborators": ["University of Wisconsin–Eau Claire College of Nursing"],
+    "students": ["Vini Araujo", "Lakshanya Velavan", "Mackler Meek", "Yegeon Cho"]
   },
   {
     "title": "CABG Outcomes and Clinical Decision Support",
     "status": "current",
+    "group": "healthcare",
+    "anchor": "cabg",
     "image": "assets/projects/cabg.jpg",
     "abstract": "Retrospective analysis of CABG outcomes using ML for risk stratification and protocol optimization across institutional cohorts.",
-    "tools": ["Python", "pandas", "XGBoost", "SHAP"]
+    "tools": ["Python", "pandas", "XGBoost", "SHAP"],
+    "collaborators": ["Mayo Clinic Health System - Cardiac Surgery"],
+    "students": ["Gabriel Tapia", "Samuel Morehead"]
   },
   {
-    "title": "IVC Filter Detection and Complication Assessment",
-    "status": "previous",
-    "image": "assets/projects/ivcf.jpg",
-    "abstract": "Deep-learning and medical-image-analysis methods for detecting and segmenting inferior vena cava filters in CT imaging and supporting automated assessment of filter-related complications.",
-    "tools": ["Python", "PyTorch", "Swin-UNet", "MONAI", "DICOM"]
-  },
-  {
-    "title": "Retrieval-Augmented Generation in Healthcare",
-    "status": "previous",
+    "title": "Generative AI and Clinical Decision Support",
+    "status": "current",
+    "group": "healthcare",
+    "anchor": "generative-ai-clinical-decision-support",
     "image": "assets/projects/rag.jpg",
-    "abstract": "Retrieval-augmented generation for clinical documentation and patient education; guardrails and privacy-aware pipelines for safe deployment.",
-    "tools": ["LangChain", "LlamaIndex", "Vector DB", "OpenAI/OSS LLMs"]
+    "abstract": "Developing retrieval-augmented generation and generative AI systems for healthcare applications, including patient education, clinical information retrieval, and AI-assisted health coaching. Current work investigates methods for grounding language-model responses in curated medical knowledge while supporting privacy-aware and locally deployable AI systems.",
+    "tools": ["LLMs", "RAG", "LangChain", "LlamaIndex", "Vector Databases", "Ollama", "Healthcare AI"],
+    "collaborators": ["CareChronicle"],
+    "students": ["Evan Biestervald", "Emily Hopke", "Aaron Fraser"]
+  },
+  {
+    "title": "GeoFarmAI: AI for Precision Agriculture",
+    "status": "current",
+    "group": "collaboration",
+    "label": "Interdisciplinary Collaboration",
+    "anchor": "geofarmai",
+    "image": "assets/projects/geospatial.jpg",
+    "project_lead": "Papia Rozario — University of Wisconsin–Eau Claire",
+    "abstract": "An interdisciplinary precision-agriculture project led by Papia Rozario at UW–Eau Claire. The Gomes Computational Lab contributes AI, machine-learning, geospatial computing, software development, and student mentorship to the project.",
+    "tools": ["Python", "Geospatial AI", "GIS", "Remote Sensing", "Machine Learning", "Precision Agriculture"],
+    "students": ["Cullen McGinnis", "Yeshi Sherpa", "Patricia Alegria — University of Maryland"]
   }
 ]

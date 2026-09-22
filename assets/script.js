@@ -185,15 +185,18 @@ async function loadGrants() {
 }
 
 async function loadProjects() {
-  const currentGrid = document.getElementById("currentProjectsGrid");
+  const healthcareGrid = document.getElementById("healthcareProjectsGrid");
+  const collaborationGrid = document.getElementById("collaborationProjectsGrid");
   const previousGrid = document.getElementById("previousProjectsGrid");
-  const grids = [currentGrid, previousGrid].filter(Boolean);
+  const pastStudents = [...document.querySelectorAll(".past-student")];
+  const pastStudentsEmpty = document.getElementById("pastStudentsEmpty");
+  const grids = [healthcareGrid, collaborationGrid, previousGrid].filter(Boolean);
   grids.forEach(grid => {
     grid.innerHTML = `<div class="card"><p style="color:#666;font-style:italic;">Loading…</p></div>`;
   });
 
   const data = await fetchJSON("data/research.json");
-  if (!currentGrid || !previousGrid) return;
+  if (!healthcareGrid || !collaborationGrid || !previousGrid) return;
   if (!data || !Array.isArray(data) || data.length === 0) {
     grids.forEach(grid => {
       grid.innerHTML = `<div class="card"><p style="color:#999;font-style:italic;">No content found.</p></div>`;
@@ -202,6 +205,7 @@ async function loadProjects() {
   }
 
   const searchEl = document.getElementById("projSearch");
+  let initialProjectAnchorHandled = false;
 
   function renderGrid(grid, items, emptyMessage) {
     grid.innerHTML = "";
@@ -212,13 +216,16 @@ async function loadProjects() {
 
     items.forEach(p => {
       const tools = Array.isArray(p.tools) ? p.tools : [];
+      const collaborators = Array.isArray(p.collaborators) ? p.collaborators : [];
+      const students = Array.isArray(p.students) ? p.students : [];
 
       const card = document.createElement("article");
       card.className = "card project-card";
+      if (p.anchor) card.id = p.anchor;
 
-      const thumb = document.createElement("div");
-      thumb.className = "thumb";
       if (p.image) {
+        const thumb = document.createElement("div");
+        thumb.className = "thumb";
         const img = document.createElement("img");
         img.src = p.image;
         img.alt = p.title || "Project image";
@@ -228,21 +235,54 @@ async function loadProjects() {
           thumb.classList.add("thumb-placeholder");
         };
         thumb.appendChild(img);
-      } else {
-        thumb.classList.add("thumb-placeholder");
+        card.appendChild(thumb);
       }
 
-      card.appendChild(thumb);
-      card.appendChild(el("h3", {}, [p.title || "Untitled Project"]));
-      card.appendChild(el("div", { class: "section-title" }, ["Abstract"]));
-      card.appendChild(el("p", {}, [p.abstract || ""]));
-      card.appendChild(el("div", { class: "section-title" }, ["Tools used"]));
+      if (p.label) {
+        card.appendChild(el("div", { class: "project-label" }, [p.label]));
+      }
 
-      const meta = document.createElement("div");
-      meta.className = "project-meta";
-      tools.forEach(t => meta.appendChild(el("span", { class: "badge" }, [t])));
-      if (!tools.length) meta.appendChild(el("span", { class: "badge" }, ["—"]));
-      card.appendChild(meta);
+      card.appendChild(el("h3", {}, [p.title || "Untitled Project"]));
+
+      if (p.project_lead) {
+        card.appendChild(el("div", { class: "project-detail-block project-lead" }, [
+          el("div", { class: "section-title" }, ["Project Lead"]),
+          el("p", {}, [p.project_lead]),
+        ]));
+      }
+
+      if (p.abstract) {
+        card.appendChild(el("div", { class: "section-title" }, ["Abstract"]));
+        card.appendChild(el("p", {}, [p.abstract]));
+      }
+
+      if (tools.length) {
+        card.appendChild(el("div", { class: "section-title" }, ["Tools used"]));
+        const meta = document.createElement("div");
+        meta.className = "project-meta";
+        tools.forEach(t => meta.appendChild(el("span", { class: "badge" }, [t])));
+        card.appendChild(meta);
+      }
+
+      if (collaborators.length) {
+        const collaboratorBlock = el("div", { class: "project-detail-block project-collaborators" }, [
+          el("div", { class: "section-title" }, ["Collaborators"]),
+        ]);
+        const collaboratorList = el("ul", { class: "project-detail-list" });
+        collaborators.forEach(collaborator => collaboratorList.appendChild(el("li", {}, [collaborator])));
+        collaboratorBlock.appendChild(collaboratorList);
+        card.appendChild(collaboratorBlock);
+      }
+
+      if (students.length) {
+        const studentBlock = el("div", { class: "project-students" }, [
+          el("div", { class: "section-title" }, ["Current Students"]),
+        ]);
+        const studentList = el("ul", { class: "project-student-list" });
+        students.forEach(student => studentList.appendChild(el("li", {}, [student])));
+        studentBlock.appendChild(studentList);
+        card.appendChild(studentBlock);
+      }
 
       grid.appendChild(card);
     });
@@ -254,15 +294,37 @@ async function loadProjects() {
       ? data.filter(p =>
           (p.title || "").toLowerCase().includes(q) ||
           (p.abstract || "").toLowerCase().includes(q) ||
-          (Array.isArray(p.tools) ? p.tools : []).join(" ").toLowerCase().includes(q)
+          (p.project_lead || "").toLowerCase().includes(q) ||
+          (Array.isArray(p.tools) ? p.tools : []).join(" ").toLowerCase().includes(q) ||
+          (Array.isArray(p.collaborators) ? p.collaborators : []).join(" ").toLowerCase().includes(q) ||
+          (Array.isArray(p.students) ? p.students : []).join(" ").toLowerCase().includes(q)
         )
       : data;
 
     const current = items.filter(p => (p.status || "").toLowerCase() === "current");
+    const healthcare = current.filter(p => (p.group || "healthcare").toLowerCase() === "healthcare");
+    const collaborations = current.filter(p => (p.group || "").toLowerCase() === "collaboration");
     const previous = items.filter(p => (p.status || "").toLowerCase() === "previous");
 
-    renderGrid(currentGrid, current, q ? "No matching current research." : "No current research found.");
-    renderGrid(previousGrid, previous, q ? "No matching previous research." : "No previous research found.");
+    renderGrid(healthcareGrid, healthcare, q ? "No matching healthcare research." : "No healthcare research found.");
+    renderGrid(collaborationGrid, collaborations, q ? "No matching interdisciplinary collaborations." : "No interdisciplinary collaborations found.");
+    renderGrid(previousGrid, previous, q ? "No matching previous research." : "No previous research projects are currently listed.");
+
+    let visiblePastStudents = 0;
+    pastStudents.forEach(student => {
+      const matches = !q || (student.dataset.name || student.textContent || "").toLowerCase().includes(q);
+      student.hidden = !matches;
+      if (matches) visiblePastStudents += 1;
+    });
+    if (pastStudentsEmpty) pastStudentsEmpty.hidden = visiblePastStudents > 0;
+
+    if (!initialProjectAnchorHandled && window.location.hash) {
+      const anchor = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
+      if (anchor && anchor.classList.contains("project-card")) {
+        initialProjectAnchorHandled = true;
+        requestAnimationFrame(() => anchor.scrollIntoView({ block: "start" }));
+      }
+    }
   }
 
   searchEl?.addEventListener("input", render);

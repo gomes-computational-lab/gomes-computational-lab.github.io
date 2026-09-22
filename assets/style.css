@@ -116,6 +116,188 @@ blockquote{border-left:3px solid var(--accent); margin:0; padding:12px; backgrou
 .project-card h3{ margin:6px 0 4px; }
 .project-card .section-title{ font-weight:700; margin-top:6px; }
 
+/* Combined Research & Students page */
+.research-page .research-page-container{
+  display:flex;
+  flex-direction:column;
+  gap:38px;
+}
+.research-page .research-page-intro{
+  max-width:860px;
+  padding:26px;
+  border:1px solid var(--border);
+  border-left:5px solid var(--accent);
+  border-radius:14px;
+  background:#fff;
+}
+.research-page .research-page-intro h2{
+  margin:7px 0 12px;
+}
+.research-page .research-page-intro p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.65;
+}
+.research-page .research-anchor-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px 18px;
+  margin-top:18px;
+}
+.research-page .research-anchor-links a{
+  font-weight:700;
+}
+.research-page .research-section{
+  margin:0;
+  scroll-margin-top:24px;
+}
+.research-page .research-section > h3{
+  margin:0 0 8px;
+  font-size:1.35rem;
+}
+.research-page .research-section > p{
+  max-width:760px;
+  margin:0 0 16px;
+  color:var(--muted);
+  line-height:1.6;
+}
+.research-page .research-searchbar{
+  max-width:640px;
+  margin-bottom:20px;
+}
+.research-page .projects-grid{
+  align-items:start;
+}
+.research-page .research-project-group + .research-project-group{
+  margin-top:32px;
+  padding-top:28px;
+  border-top:1px solid var(--border);
+}
+.research-page .research-project-group-heading{
+  margin-bottom:16px;
+}
+.research-page .research-project-group-heading h4{
+  margin:5px 0 0;
+  font-family:"Merriweather", Georgia, serif;
+  font-size:1.22rem;
+}
+.research-page .research-project-group-collaboration .research-project-group-heading h4{
+  font-size:1.08rem;
+}
+.research-page .collaboration-projects-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+.research-page .collaboration-projects-grid .project-card{
+  background:#fbfcfe;
+}
+.research-page .project-card{
+  scroll-margin-top:24px;
+}
+.research-page .project-card:target{
+  border-color:var(--link);
+  box-shadow:0 0 0 3px rgba(0,51,102,.1);
+}
+.research-page .project-label{
+  color:var(--muted);
+  font-size:.76rem;
+  font-weight:700;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+.research-page .project-detail-block{
+  margin-top:4px;
+}
+.research-page .project-detail-block .section-title{
+  margin:0 0 6px;
+  font-size:.9rem;
+}
+.research-page .project-detail-block p,
+.research-page .project-detail-list{
+  margin:0;
+}
+.research-page .project-detail-list{
+  padding-left:19px;
+  line-height:1.5;
+}
+.research-page .project-detail-list li + li{
+  margin-top:4px;
+}
+.research-page .project-students{
+  margin-top:auto;
+  padding-top:13px;
+  border-top:1px solid var(--border);
+}
+.research-page .project-students .section-title{
+  margin:0 0 8px;
+  font-size:.9rem;
+}
+.research-page .project-student-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.research-page .project-student-list li{
+  padding:4px 9px;
+  border:1px solid var(--border);
+  border-radius:999px;
+  background:#fafafa;
+  font-size:.88rem;
+}
+.research-page .past-students-section{
+  padding:24px;
+  border:1px solid var(--border);
+  border-radius:14px;
+  background:#fbfcfe;
+}
+.research-page .past-students-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:0 22px;
+  margin:0;
+  padding:0;
+  border-top:1px solid var(--border);
+  list-style:none;
+}
+.research-page .past-student{
+  padding:11px 2px;
+  border-bottom:1px solid var(--border);
+}
+.research-page .research-empty{
+  margin:14px 0 0;
+  color:var(--muted);
+  font-style:italic;
+}
+.research-page .research-anchor-links a:focus-visible,
+.research-page .project-card:focus-visible{
+  outline:3px solid var(--accent);
+  outline-offset:3px;
+}
+@media (max-width:900px){
+  .research-page .collaboration-projects-grid{
+    grid-template-columns:1fr;
+  }
+}
+@media (max-width:800px){
+  .research-page .past-students-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+@media (max-width:520px){
+  .research-page .research-page-container{
+    gap:32px;
+  }
+  .research-page .research-page-intro,
+  .research-page .past-students-section{
+    padding:20px;
+  }
+  .research-page .past-students-grid{
+    grid-template-columns:1fr;
+  }
+}
+
 
 .btn{
   display:inline-block; padding:10px 14px; border-radius:10px;

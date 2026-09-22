@@ -2,13 +2,13 @@
 # Rahul Gomes — Academic Website
 
 A lightweight, multi-page academic website in a **light theme** with serif headings and UW–Eau Claire colors.  
-Content is loaded from JSON files so you can update publications, grants, students, media, and updates without editing HTML.
+Content is loaded from JSON files so you can update publications, grants, research projects, media, and updates without editing HTML.
 
 ## Structure
 - `index.html` — Home + Recent Updates
 - `about.html` — Bio, Education, Employment, Invited Talks, Awards
-- `research.html` — Research overview + grants table
-- `students.html` — Students & team
+- `research.html` — Combined research projects and students page
+- `students.html` — Redirect to the students section of `research.html`
 - `teaching.html` — Courses taught
 - `publications.html` — Full citations (peer-reviewed, posters, regional)
 - `grants.html` — Grants only (also listed in Research)
@@ -23,7 +23,7 @@ Content is loaded from JSON files so you can update publications, grants, studen
 Edit the JSON files in `data/`:
 - `publications.json`
 - `grants.json`
-- `students.json`
+- `research.json`
 - `teaching.json`
 - `media.json`
 - `updates.json`
@@ -108,7 +108,7 @@ Option B — Project site:
 ## Customization
 - Update site title and affiliation in `assets/header` (duplicated per page inside the template). Search for `Rahul Gomes, Ph.D.` to change.
 - Replace colors by editing `:root` variables in `assets/style.css`.
-- Add students: edit `data/students.json`.
+- Add current students: edit the project `students` arrays in `data/research.json`; maintain the compact past-student list in `research.html`.
 - Add publications: edit `data/publications.json` (keep fields: `year`, `title`, `authors`, `venue`, `doi` and/or `link`).
 
 ## License
