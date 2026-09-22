@@ -1,6 +1,100 @@
 {
   "peer_reviewed": [
     {
+      "title": "AlphaMissense pathogenicity scores predict response to immunotherapy and enhances the predictive capability of tumor mutation burden",
+      "year": 2026,
+      "authors": "David Adeleke; Adewale Oluwaseun Fadaka; Nicole Remaliah Samantha Sibuyi; Ashwil Klein; Mervin Meyer; Gomes Rahul; Rick Jansen",
+      "venue": "Translational Oncology",
+      "volume": "65",
+      "pages": "102697",
+      "publisher": "Elsevier",
+      "scholar_id": "s2LUBTQAAAAJ:ZHo1McVdvXMC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&citation_for_view=s2LUBTQAAAAJ:ZHo1McVdvXMC",
+      "link": "https://www.sciencedirect.com/science/article/pii/S1936523326000343",
+      "citations": 0,
+      "source": "google_scholar"
+    },
+    {
+      "title": "Distilling Knowledge in GI: An AI System for Assisting Colonoscopy and Pathology Report Review",
+      "year": 2026,
+      "authors": "Brayden Mau; Sushil Kumar Garg; Sarah B Harper; Rahul Gomes; Alexandra Rolli; Rajeev Chaudhry",
+      "venue": "Mayo Clinic Proceedings: Digital Health",
+      "pages": "100372",
+      "publisher": "Elsevier",
+      "scholar_id": "s2LUBTQAAAAJ:zA6iFVUQeVQC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&citation_for_view=s2LUBTQAAAAJ:zA6iFVUQeVQC",
+      "link": "https://www.sciencedirect.com/science/article/pii/S2949761226000386",
+      "citations": 0,
+      "source": "google_scholar"
+    },
+    {
+      "title": "Integrating Soil Sensing and Machine Learning for Precision Agriculture: A Multiscale Approach to Smarter Fertility Management",
+      "year": 2026,
+      "authors": "Papia F Rozario; Gabriel Sipos; Landon Dierkes; Gabriel Tapia; Pedro Sanchez; Debankur Sanyal; Dipankar Mitra; Rahul Gomes",
+      "venue": "2026 IEEE International Conference on Electro Information Technology (eIT)",
+      "pages": "1-7",
+      "publisher": "IEEE",
+      "scholar_id": "s2LUBTQAAAAJ:4OULZ7Gr8RgC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&citation_for_view=s2LUBTQAAAAJ:4OULZ7Gr8RgC",
+      "link": "https://ieeexplore.ieee.org/abstract/document/11670398/",
+      "citations": 0,
+      "source": "google_scholar"
+    },
+    {
+      "title": "Lightweight Spatiotemporal Machine Learning Framework for Multi-Class Wildlife Roadkill Classification",
+      "year": 2026,
+      "authors": "Kaaviyashri Saraboji; Rahul Gomes; Dipankar Mitra",
+      "venue": "2026 IEEE International Conference on Electro Information Technology (eIT)",
+      "pages": "319-323",
+      "publisher": "IEEE",
+      "scholar_id": "s2LUBTQAAAAJ:fPk4N6BV_jEC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&citation_for_view=s2LUBTQAAAAJ:fPk4N6BV_jEC",
+      "link": "https://ieeexplore.ieee.org/abstract/document/11670399/",
+      "citations": 0,
+      "source": "google_scholar"
+    },
+    {
+      "title": "A Multi-Stage Deep Learning Framework for Antenna Array Synthesis in Satellite IoT Networks",
+      "year": 2025,
+      "authors": "Valliammai Arunachalam; Luke Rosen; Mojisola Rachel Akinsiku; Shuvashis Dey; Rahul Gomes; Dipankar Mitra",
+      "venue": "AI",
+      "volume": "6",
+      "issue": "10",
+      "pages": "248",
+      "publisher": "MDPI",
+      "scholar_id": "s2LUBTQAAAAJ:ldfaerwXgEUC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&citation_for_view=s2LUBTQAAAAJ:ldfaerwXgEUC",
+      "link": "https://www.mdpi.com/2673-2688/6/10/248",
+      "citations": 3,
+      "source": "google_scholar"
+    },
+    {
+      "title": "Efficient Prediction of Antenna Parameters Using Ensemble-Based Machine Learning Model",
+      "year": 2025,
+      "authors": "Valliammai Arunachalam; Luke Rosen; Dipankar Mitra; Shuvashis Dey; Rahul Gomes",
+      "venue": "2025 IEEE International Symposium on Antennas and Propagation and North American Radio Science Meeting (AP-S/CNC-USNC-URSI)",
+      "pages": "1522-1525",
+      "publisher": "IEEE",
+      "scholar_id": "s2LUBTQAAAAJ:pqnbT2bcN3wC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&citation_for_view=s2LUBTQAAAAJ:pqnbT2bcN3wC",
+      "link": "https://ieeexplore.ieee.org/abstract/document/11266329/",
+      "citations": 1,
+      "source": "google_scholar"
+    },
+    {
+      "title": "Exploring Feature Selection and Cross-Validation for Improved Crop Yield Prediction",
+      "year": 2025,
+      "authors": "Papia F Rozario; Daniel Chvat; Landon Dierkes; Grace Abraham; Kristen North; Gabriel Sipos; Grace McDonnell; Rahul Gomes",
+      "venue": "2025 IEEE International Conference on Electro Information Technology (eIT)",
+      "pages": "207-212",
+      "publisher": "IEEE",
+      "scholar_id": "s2LUBTQAAAAJ:2P1L_qKh6hAC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&citation_for_view=s2LUBTQAAAAJ:2P1L_qKh6hAC",
+      "link": "https://ieeexplore.ieee.org/abstract/document/11103692/",
+      "citations": 0,
+      "source": "google_scholar"
+    },
+    {
       "year": 2025,
       "title": "Exploring Feature Selection with Deep Learning for Kidney Tissue Microarray Classification Using Infrared Spectral Imaging",
       "authors": "Caterer, Zachary; Jordan Langlois; Connor McKeown; Mikayla Hady; Samuel Stumo; Suman Setty; Michael Walsh; and Rahul Gomes",
@@ -9,44 +103,31 @@
       "link": "https://doi.org/10.3390/bioengineering12040366"
     },
     {
-      "year": 2024,
-      "title": "On the Feasibility of a 3D-Printable Conductive Filament-Based Antenna Array for Conformal Applications",
-      "authors": "Konduru, Hemachandra; Benjamin Callies; Dipankar Mitra; Sayan Roy; Shuvashis Dey; and Rahul Gomes",
-      "venue": "IEEE International Symposium on Antennas and Propagation and INC/USNC‐URSI Radio Science Meeting (AP-S/INC-USNC-URSI)",
-      "doi": "10.1109/AP-S/INC-USNC-URSI52054.2024.10686449",
-      "link": "https://doi.org/10.1109/AP-S/INC-USNC-URSI52054.2024.10686449"
+      "title": "Integrating U-Net in a LLM Supervisor Agent Pipeline for Pancreatic Ductal Adenocarcinoma Diagnosis",
+      "year": 2025,
+      "authors": "Rahul Gomes; William L Jerome; Sushil K Garg",
+      "venue": "Mayo Clinic Proceedings: Digital Health",
+      "volume": "3",
+      "issue": "4",
+      "publisher": "Elsevier",
+      "scholar_id": "s2LUBTQAAAAJ:g5m5HwL7SMYC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&citation_for_view=s2LUBTQAAAAJ:g5m5HwL7SMYC",
+      "link": "https://www.mcpdigitalhealth.org/article/S2949-7612(25)00094-X/fulltext",
+      "citations": 0,
+      "source": "google_scholar"
     },
     {
-      "year": 2024,
-      "title": "OSDA-ST: Advancing Open Set Domain Adaptation Through Selective Thresholding in Remote Sensing",
-      "authors": "Wang, Andy; Gomes, Rahul; Rozario, Papia F.",
-      "venue": "IEEE International Conference on Big Data (BigData)",
-      "doi": "10.1109/BigData62323.2024.10825228",
-      "link": "https://doi.org/10.1109/BigData62323.2024.10825228"
-    },
-    {
-      "year": 2024,
-      "title": "Optimizing Mobile Vision Transformers for Land Cover Classification",
-      "authors": "Rozario, Papia F.; Gadgil, Ravi; Lee, Junsu; Gomes, Rahul; et al.",
-      "venue": "Applied Sciences 14(13):5920",
-      "doi": "10.3390/app14135920",
-      "link": "https://doi.org/10.3390/app14135920"
-    },
-    {
-      "year": 2024,
-      "title": "Analyzing the Impact of Geospatial Derivatives on Domain Adaptation with CycleGAN",
-      "authors": "Rozario, Papia F.; Lee, Junsu; Chen, Yangguang; Mohan, Pavithra Devy; DeWitte, Matthew; Gomes, Rahul",
-      "venue": "IEEE International Conference on Electro Information Technology (eIT)",
-      "doi": "10.1109/eIT60633.2024.10609908",
-      "link": "https://doi.org/10.1109/eIT60633.2024.10609908"
-    },
-    {
-      "year": 2024,
-      "title": "On the Machine Learning-based Multi-class Classification of Microscopic Colitis",
-      "authors": "Tara, Vivek; Mitra, Dipankar; Muduganti, Aditi; Mali, Padmavathi; Maiti, Srabana; Dey, Shuvashis; Gomes, Rahul",
-      "venue": "IEEE International Conference on Electro Information Technology (eIT)",
-      "doi": "10.1109/eIT60633.2024.10609954",
-      "link": "https://doi.org/10.1109/eIT60633.2024.10609954"
+      "title": "YOLO-Based Object Detection for Automated Identification of IVC Filters in Abdominal CT Imaging",
+      "year": 2025,
+      "authors": "Mykle Buhrow; Ian Nie; Naeem Seliya; Joseph Wildenberg; Rahul Gomes",
+      "venue": "2025 International Conference on Machine Learning and Applications (ICMLA)",
+      "pages": "1318-1323",
+      "publisher": "IEEE",
+      "scholar_id": "s2LUBTQAAAAJ:rO6llkc54NcC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&citation_for_view=s2LUBTQAAAAJ:rO6llkc54NcC",
+      "link": "https://ieeexplore.ieee.org/abstract/document/11471509/",
+      "citations": 0,
+      "source": "google_scholar"
     },
     {
       "year": 2024,
@@ -58,6 +139,14 @@
     },
     {
       "year": 2024,
+      "title": "Analyzing the Impact of Geospatial Derivatives on Domain Adaptation with CycleGAN",
+      "authors": "Rozario, Papia F.; Lee, Junsu; Chen, Yangguang; Mohan, Pavithra Devy; DeWitte, Matthew; Gomes, Rahul",
+      "venue": "IEEE International Conference on Electro Information Technology (eIT)",
+      "doi": "10.1109/eIT60633.2024.10609908",
+      "link": "https://doi.org/10.1109/eIT60633.2024.10609908"
+    },
+    {
+      "year": 2024,
       "title": "High-performance computing in undergraduate education at primarily undergraduate institutions in Wisconsin: Progress, challenges, and opportunities",
       "authors": "Hebert, Jordan; Hratisch, Ryan; Gomes, Rahul; Kunkel, William; Marshall, Daniel; Ghosh, Abhimanyu; Doss, Isabella; et al.",
       "venue": "Education and Information Technologies",
@@ -65,52 +154,36 @@
       "link": "https://doi.org/10.1007/s10639-024-12582-6"
     },
     {
-      "year": 2023,
-      "title": "Vision Transformer-based Classification for Lung and Colon Cancer using Histopathology Images",
-      "authors": "Hasan, Munjur; Rahman, Md Saifur; Islam, Sabrina; Ahmed, Tanvir; Rifat, Nafiz; Ahsan, Mostofa; Gomes, Rahul; Chowdhury, Md",
-      "venue": "International Conference on Machine Learning and Applications (ICMLA)",
-      "doi": "10.1109/ICMLA58977.2023.00196",
-      "link": "https://doi.org/10.1109/ICMLA58977.2023.00196"
+      "year": 2024,
+      "title": "On the Feasibility of a 3D-Printable Conductive Filament-Based Antenna Array for Conformal Applications",
+      "authors": "Konduru, Hemachandra; Benjamin Callies; Dipankar Mitra; Sayan Roy; Shuvashis Dey; and Rahul Gomes",
+      "venue": "IEEE International Symposium on Antennas and Propagation and INC/USNC‐URSI Radio Science Meeting (AP-S/INC-USNC-URSI)",
+      "doi": "10.1109/AP-S/INC-USNC-URSI52054.2024.10686449",
+      "link": "https://doi.org/10.1109/AP-S/INC-USNC-URSI52054.2024.10686449"
     },
     {
-      "year": 2023,
-      "title": "ChatGPT: The Curious Case of Attack Vectors\u2019 Supply Chain Management Improvement",
-      "authors": "Chowdhury, Minhaz; Rifat, Nafiz; Latif, Shadman; Ahsan, Mostofa; Rahman, M. Saifur; Gomes, Rahul",
+      "year": 2024,
+      "title": "On the Machine Learning-based Multi-class Classification of Microscopic Colitis",
+      "authors": "Tara, Vivek; Mitra, Dipankar; Muduganti, Aditi; Mali, Padmavathi; Maiti, Srabana; Dey, Shuvashis; Gomes, Rahul",
       "venue": "IEEE International Conference on Electro Information Technology (eIT)",
-      "doi": "10.1109/eIT57321.2023.10187385",
-      "link": "https://doi.org/10.1109/eIT57321.2023.10187385"
+      "doi": "10.1109/eIT60633.2024.10609954",
+      "link": "https://doi.org/10.1109/eIT60633.2024.10609954"
     },
     {
-      "year": 2023,
-      "title": "Deep Learning Patch-Based Approach for Hyperspectral Image Classification",
-      "authors": "Rozario, Papia F.; Ruehmann, Elenaour; Pham, Tyler; Sun, Tianqi; Jensen, Jacob; Jia, Hengrui; Yu, Zhongyue; Gomes, Rahul",
-      "venue": "IEEE International Conference on Electro Information Technology (eIT)",
-      "doi": "10.1109/eIT57321.2023.10187387",
-      "link": "https://doi.org/10.1109/eIT57321.2023.10187387"
+      "year": 2024,
+      "title": "Optimizing Mobile Vision Transformers for Land Cover Classification",
+      "authors": "Rozario, Papia F.; Gadgil, Ravi; Lee, Junsu; Gomes, Rahul; et al.",
+      "venue": "Applied Sciences 14(13):5920",
+      "doi": "10.3390/app14135920",
+      "link": "https://doi.org/10.3390/app14135920"
     },
     {
-      "year": 2023,
-      "title": "ChatGPT: A Threat Against the CIA Triad of Cyber Security",
-      "authors": "Chowdhury, Minhaz; Rifat, Nafiz; Latif, Shadman; Ahsan, Mostofa; Gomes, Rahul; Rahman, M. Saifur",
-      "venue": "IEEE International Conference on Electro Information Technology (eIT)",
-      "doi": "10.1109/eIT57321.2023.10187355",
-      "link": "https://doi.org/10.1109/eIT57321.2023.10187355"
-    },
-    {
-      "year": 2023,
-      "title": "Deep Learning Application for Detection of Malaria",
-      "authors": "Rahman, M. Saifur; Rifat, Nafiz; Ahsan, Mostofa; Islam, Sabrina; Chowdhury, Minhaz; Gomes, Rahul",
-      "venue": "IEEE International Conference on Electro Information Technology (eIT)",
-      "doi": "10.1109/eIT57321.2023.10187342",
-      "link": "https://doi.org/10.1109/eIT57321.2023.10187342"
-    },
-    {
-      "year": 2023,
-      "title": "High variation across E. coli hybrid isolates identified in metabolism-related biological pathways co-expressed with virulent genes",
-      "authors": "Gomes, Rahul; Denison Kroschel, Ashleigh; Day, Stephanie; Jansen, Rick",
-      "venue": "Gut Microbes 15(1):2228042",
-      "doi": "10.1080/19490976.2023.2228042",
-      "link": "https://doi.org/10.1080/19490976.2023.2228042"
+      "year": 2024,
+      "title": "OSDA-ST: Advancing Open Set Domain Adaptation Through Selective Thresholding in Remote Sensing",
+      "authors": "Wang, Andy; Gomes, Rahul; Rozario, Papia F.",
+      "venue": "IEEE International Conference on Big Data (BigData)",
+      "doi": "10.1109/BigData62323.2024.10825228",
+      "link": "https://doi.org/10.1109/BigData62323.2024.10825228"
     },
     {
       "year": 2023,
@@ -122,6 +195,46 @@
     },
     {
       "year": 2023,
+      "title": "ChatGPT: A Threat Against the CIA Triad of Cyber Security",
+      "authors": "Chowdhury, Minhaz; Rifat, Nafiz; Latif, Shadman; Ahsan, Mostofa; Gomes, Rahul; Rahman, M. Saifur",
+      "venue": "IEEE International Conference on Electro Information Technology (eIT)",
+      "doi": "10.1109/eIT57321.2023.10187355",
+      "link": "https://doi.org/10.1109/eIT57321.2023.10187355"
+    },
+    {
+      "year": 2023,
+      "title": "ChatGPT: The Curious Case of Attack Vectors’ Supply Chain Management Improvement",
+      "authors": "Chowdhury, Minhaz; Rifat, Nafiz; Latif, Shadman; Ahsan, Mostofa; Rahman, M. Saifur; Gomes, Rahul",
+      "venue": "IEEE International Conference on Electro Information Technology (eIT)",
+      "doi": "10.1109/eIT57321.2023.10187385",
+      "link": "https://doi.org/10.1109/eIT57321.2023.10187385"
+    },
+    {
+      "year": 2023,
+      "title": "Deep Learning Application for Detection of Malaria",
+      "authors": "Rahman, M. Saifur; Rifat, Nafiz; Ahsan, Mostofa; Islam, Sabrina; Chowdhury, Minhaz; Gomes, Rahul",
+      "venue": "IEEE International Conference on Electro Information Technology (eIT)",
+      "doi": "10.1109/eIT57321.2023.10187342",
+      "link": "https://doi.org/10.1109/eIT57321.2023.10187342"
+    },
+    {
+      "year": 2023,
+      "title": "Deep Learning Patch-Based Approach for Hyperspectral Image Classification",
+      "authors": "Rozario, Papia F.; Ruehmann, Elenaour; Pham, Tyler; Sun, Tianqi; Jensen, Jacob; Jia, Hengrui; Yu, Zhongyue; Gomes, Rahul",
+      "venue": "IEEE International Conference on Electro Information Technology (eIT)",
+      "doi": "10.1109/eIT57321.2023.10187387",
+      "link": "https://doi.org/10.1109/eIT57321.2023.10187387"
+    },
+    {
+      "year": 2023,
+      "title": "High variation across E. coli hybrid isolates identified in metabolism-related biological pathways co-expressed with virulent genes",
+      "authors": "Gomes, Rahul; Denison Kroschel, Ashleigh; Day, Stephanie; Jansen, Rick",
+      "venue": "Gut Microbes 15(1):2228042",
+      "doi": "10.1080/19490976.2023.2228042",
+      "link": "https://doi.org/10.1080/19490976.2023.2228042"
+    },
+    {
+      "year": 2023,
       "title": "Inter-institutional Resource Sharing in Undergraduate HPC Education: Interviews with University Administrators",
       "authors": "Ghosh, Abhimanyu; Kunkel, William; Varghese, Anthony; Ma, Ying; Gomes, Rahul; Bhattacharyya, Sudeep; Mohr, Molly; Doss, Isabella; Hebert, Jordan",
       "venue": "Proceedings of the 54th ACM Technical Symposium on Computer Science Education (SIGCSE)",
@@ -129,28 +242,12 @@
       "link": "https://doi.org/10.1145/3545945.3569784"
     },
     {
-      "year": 2022,
-      "title": "IVC filter detection using an artificial intelligence approach",
-      "authors": "Gomes, Rahul; Kamrowski, Connor; Mohan, Pavithra; Langlois, Jordan; Wildenberg, Joe",
-      "venue": "Diagnostics 12(10):2475",
-      "doi": "10.3390/diagnostics12102475",
-      "link": "https://doi.org/10.3390/diagnostics12102475"
-    },
-    {
-      "year": 2022,
-      "title": "Application of feature selection and deep learning for cancer prediction using DNA methylation markers",
-      "authors": "Gomes, Rahul; Paul, Nijhum; He, Nichol; Huber, Aaron; Jansen, Rick",
-      "venue": "Genes 13(9):1557",
-      "doi": "10.3390/genes13091557",
-      "link": "https://doi.org/10.3390/genes13091557"
-    },
-    {
-      "year": 2022,
-      "title": "Large-Window Curvature Computations for High-Resolution Digital Elevation Models",
-      "authors": "Denton, Anne; Gomes, Rahul; Schwartz, David; Franzen, David",
-      "venue": "IEEE Transactions on Geoscience and Remote Sensing",
-      "doi": "10.1109/TGRS.2022.3200354",
-      "link": "https://doi.org/10.1109/TGRS.2022.3200354"
+      "year": 2023,
+      "title": "Vision Transformer-based Classification for Lung and Colon Cancer using Histopathology Images",
+      "authors": "Hasan, Munjur; Rahman, Md Saifur; Islam, Sabrina; Ahmed, Tanvir; Rifat, Nafiz; Ahsan, Mostofa; Gomes, Rahul; Chowdhury, Md",
+      "venue": "International Conference on Machine Learning and Applications (ICMLA)",
+      "doi": "10.1109/ICMLA58977.2023.00196",
+      "link": "https://doi.org/10.1109/ICMLA58977.2023.00196"
     },
     {
       "year": 2022,
@@ -162,11 +259,11 @@
     },
     {
       "year": 2022,
-      "title": "Cybersecurity Threats and Their Mitigation Approaches Using Machine Learning\u2014A Review",
-      "authors": "Ahsan, Mostofa; Nygard, Kendall; Gomes, Rahul; Chowdhury, Minhaz; Rifat, Nafiz; Connolly, Jayden",
-      "venue": "Journal of Cybersecurity and Privacy 2(3):527-555",
-      "doi": "10.3390/jcp2030027",
-      "link": "https://doi.org/10.3390/jcp2030027"
+      "title": "Application of feature selection and deep learning for cancer prediction using DNA methylation markers",
+      "authors": "Gomes, Rahul; Paul, Nijhum; He, Nichol; Huber, Aaron; Jansen, Rick",
+      "venue": "Genes 13(9):1557",
+      "doi": "10.3390/genes13091557",
+      "link": "https://doi.org/10.3390/genes13091557"
     },
     {
       "year": 2022,
@@ -175,6 +272,22 @@
       "venue": "IEEE International Conference on Electro Information Technology (eIT)",
       "doi": "10.1109/eIT53891.2022.9813922",
       "link": "https://doi.org/10.1109/eIT53891.2022.9813922"
+    },
+    {
+      "year": 2022,
+      "title": "COVID-19 Sentiment Analysis applying BERT",
+      "authors": "Rifat, Nafiz; Ahsan, Mostofa; Chowdhury, Minhaz; Gomes, Rahul",
+      "venue": "IEEE International Conference on Electro Information Technology (eIT)",
+      "doi": "10.1109/eIT53891.2022.9813777",
+      "link": "https://doi.org/10.1109/eIT53891.2022.9813777"
+    },
+    {
+      "year": 2022,
+      "title": "Cybersecurity Threats and Their Mitigation Approaches Using Machine Learning—A Review",
+      "authors": "Ahsan, Mostofa; Nygard, Kendall; Gomes, Rahul; Chowdhury, Minhaz; Rifat, Nafiz; Connolly, Jayden",
+      "venue": "Journal of Cybersecurity and Privacy 2(3):527-555",
+      "doi": "10.3390/jcp2030027",
+      "link": "https://doi.org/10.3390/jcp2030027"
     },
     {
       "year": 2022,
@@ -194,19 +307,19 @@
     },
     {
       "year": 2022,
-      "title": "COVID-19 Sentiment Analysis applying BERT",
-      "authors": "Rifat, Nafiz; Ahsan, Mostofa; Chowdhury, Minhaz; Gomes, Rahul",
-      "venue": "IEEE International Conference on Electro Information Technology (eIT)",
-      "doi": "10.1109/eIT53891.2022.9813777",
-      "link": "https://doi.org/10.1109/eIT53891.2022.9813777"
+      "title": "IVC filter detection using an artificial intelligence approach",
+      "authors": "Gomes, Rahul; Kamrowski, Connor; Mohan, Pavithra; Langlois, Jordan; Wildenberg, Joe",
+      "venue": "Diagnostics 12(10):2475",
+      "doi": "10.3390/diagnostics12102475",
+      "link": "https://doi.org/10.3390/diagnostics12102475"
     },
     {
-      "year": 2021,
-      "title": "Enhancing Machine Learning Prediction in Cybersecurity Using Dynamic Feature Selector",
-      "authors": "Ahsan, Mostofa; Nygard, Kendall; Gomes, Rahul; Chowdhury, Minhaz; Rifat, Nafiz; Connolly, Jayden",
-      "venue": "Journal of Cybersecurity and Privacy 1(1):199-218",
-      "doi": "10.3390/jcp1010011",
-      "link": "https://doi.org/10.3390/jcp1010011"
+      "year": 2022,
+      "title": "Large-Window Curvature Computations for High-Resolution Digital Elevation Models",
+      "authors": "Denton, Anne; Gomes, Rahul; Schwartz, David; Franzen, David",
+      "venue": "IEEE Transactions on Geoscience and Remote Sensing",
+      "doi": "10.1109/TGRS.2022.3200354",
+      "link": "https://doi.org/10.1109/TGRS.2022.3200354"
     },
     {
       "year": 2021,
@@ -225,20 +338,20 @@
       "link": "https://doi.org/10.1109/EIT51626.2021.9491910"
     },
     {
-      "year": 2019,
-      "title": "Quantifying efficiency of sliding-window based aggregation technique ...",
-      "authors": "Gomes, Rahul; Denton, Anne; Franzen, David",
-      "venue": "ISPRS International Journal of Geo-Information 8(4)",
-      "doi": "10.3390/ijgi8040196",
-      "link": "https://doi.org/10.3390/ijgi8040196"
+      "year": 2021,
+      "title": "Enhancing Machine Learning Prediction in Cybersecurity Using Dynamic Feature Selector",
+      "authors": "Ahsan, Mostofa; Nygard, Kendall; Gomes, Rahul; Chowdhury, Minhaz; Rifat, Nafiz; Connolly, Jayden",
+      "venue": "Journal of Cybersecurity and Privacy 1(1):199-218",
+      "doi": "10.3390/jcp1010011",
+      "link": "https://doi.org/10.3390/jcp1010011"
     },
     {
       "year": 2019,
-      "title": "Comparing classification accuracy of NDVI with DEM derived attributes ...",
-      "authors": "Gomes, Rahul; Denton, Anne; Franzen, David",
+      "title": "Application of a Convolutional Neural Network using transfer learning for tuberculosis detection",
+      "authors": "Ahsan, Mostofa; Gomes, Rahul; Denton, Anne",
       "venue": "IEEE International Conference on Electro/Information Technology (EIT)",
-      "doi": "10.1109/EIT.2019.8833766",
-      "link": "https://doi.org/10.1109/EIT.2019.8833766"
+      "doi": "10.1109/EIT.2019.8833768",
+      "link": "https://doi.org/10.1109/EIT.2019.8833768"
     },
     {
       "year": 2019,
@@ -250,11 +363,19 @@
     },
     {
       "year": 2019,
-      "title": "Application of a Convolutional Neural Network using transfer learning for tuberculosis detection",
-      "authors": "Ahsan, Mostofa; Gomes, Rahul; Denton, Anne",
+      "title": "Comparing classification accuracy of NDVI with DEM derived attributes ...",
+      "authors": "Gomes, Rahul; Denton, Anne; Franzen, David",
       "venue": "IEEE International Conference on Electro/Information Technology (EIT)",
-      "doi": "10.1109/EIT.2019.8833768",
-      "link": "https://doi.org/10.1109/EIT.2019.8833768"
+      "doi": "10.1109/EIT.2019.8833766",
+      "link": "https://doi.org/10.1109/EIT.2019.8833766"
+    },
+    {
+      "year": 2019,
+      "title": "Quantifying efficiency of sliding-window based aggregation technique ...",
+      "authors": "Gomes, Rahul; Denton, Anne; Franzen, David",
+      "venue": "ISPRS International Journal of Geo-Information 8(4)",
+      "doi": "10.3390/ijgi8040196",
+      "link": "https://doi.org/10.3390/ijgi8040196"
     },
     {
       "year": 2018,
@@ -282,14 +403,6 @@
     },
     {
       "year": 2017,
-      "title": "Genetic algorithm for flood detection and evacuation route planning",
-      "authors": "Gomes, Rahul; Straub, Jeremy",
-      "venue": "SPIE Defense+ Security",
-      "doi": "10.1117/12.2266474",
-      "link": "https://doi.org/10.1117/12.2266474"
-    },
-    {
-      "year": 2017,
       "title": "Additive Manufacturing (3D Printing) Material and Cost Reduction Algorithm Proof",
       "authors": "Nelson, Ryan; Gabler, Andrew; Slusar, Skyler; Gordon, Aaron; McMillan, John; Gomes, Rahul; Straub, Jeremy",
       "venue": "AIAA SPACE and Astronautics Forum and Exposition",
@@ -303,9 +416,44 @@
       "venue": "IEEE/AIAA 36th Digital Avionics Systems Conference (DASC)",
       "doi": "10.1109/DASC.2017.8102118",
       "link": "https://doi.org/10.1109/DASC.2017.8102118"
+    },
+    {
+      "title": "An interconnected network of UAS as a system-of-systems",
+      "year": 2017,
+      "authors": "Rahul Gomes; Jeremy Straub; Andrew Jones; John Morgan; Santipab Tipparach; Aaron Sletten; Keon Woo Kim; David Loegering; Nick Feikema; Karanam Dayananda; Goutham Miryala; Andrew Gass; Kevin Setterstrom; Jacob Mischel; Dylan Shipman; Colleen Nazzaro",
+      "venue": "2017 IEEE/AIAA 36th Digital Avionics Systems Conference (DASC)",
+      "pages": "1-7",
+      "publisher": "IEEE",
+      "scholar_id": "s2LUBTQAAAAJ:Tyk-4Ss8FVUC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&citation_for_view=s2LUBTQAAAAJ:Tyk-4Ss8FVUC",
+      "link": "https://ieeexplore.ieee.org/abstract/document/8102148/",
+      "citations": 10,
+      "source": "google_scholar"
+    },
+    {
+      "year": 2017,
+      "title": "Genetic algorithm for flood detection and evacuation route planning",
+      "authors": "Gomes, Rahul; Straub, Jeremy",
+      "venue": "SPIE Defense+ Security",
+      "doi": "10.1117/12.2266474",
+      "link": "https://doi.org/10.1117/12.2266474"
     }
   ],
   "posters_and_abstracts": [
+    {
+      "title": "Colon-Pilot: a generative AI tool for automated colonoscopy surveillance recommendations and 2024 ACG/ASGE quality benchmarking",
+      "year": 2026,
+      "authors": "Sushil Kumar Garg; Brayden Mau; Jeffery Hubers; Victor Arce; Nicole Hooper; Jennifer Lindquist; Sarah B Harper; Ann B Thayer; Piyush Mukherjee; Brenna T Loufek; Joe Melnick; Lauren M Rost; Steven A Robbins; Rahul Gomes; Rajeev Chaudhary",
+      "venue": "American Journal of Gastroenterology",
+      "volume": "121",
+      "issue": "4",
+      "pages": "964-973",
+      "scholar_id": "s2LUBTQAAAAJ:SeFeTyx0c_EC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&citation_for_view=s2LUBTQAAAAJ:SeFeTyx0c_EC",
+      "link": "https://journals.lww.com/ajg/abstract/10.14309/ajg.0000000000003946~colon-pilot-a-generative-ai-tool-for-automated-colonoscopy",
+      "citations": 6,
+      "source": "google_scholar"
+    },
     {
       "year": 2022,
       "title": "Automated IVC Filter Detection from Abdominopelvic CT Exams using Deep Learning",
@@ -347,6 +495,12 @@
     },
     {
       "year": 2022,
+      "title": "A Deep Learning Model for PDAC Chemotherapy Outcome Prediction",
+      "venue": "CERCA 2022 (Poster)",
+      "authors": "He Nichol; Kamrowski Connor; Varatharajan Thulasi; Syzmoniak Amy; Lathiya Maulik; Gomes Rahul"
+    },
+    {
+      "year": 2022,
       "title": "Comparison of Pathways and Detection Strategies for PDAC Using GEMM",
       "venue": "CERCA 2022 (Poster)",
       "authors": "Kroschel Ashleigh; Heinecke Olivia; Gomes Rahul"
@@ -356,12 +510,6 @@
       "title": "Detection of IVC Filters on CT Scans Using an AI Algorithm",
       "venue": "CERCA 2022 (Poster)",
       "authors": "Kamrowski Connor; Mohan Pavithra; Senor Cameron; Gomes Rahul"
-    },
-    {
-      "year": 2022,
-      "title": "A Deep Learning Model for PDAC Chemotherapy Outcome Prediction",
-      "venue": "CERCA 2022 (Poster)",
-      "authors": "He Nichol; Kamrowski Connor; Varatharajan Thulasi; Syzmoniak Amy; Lathiya Maulik; Gomes Rahul"
     },
     {
       "year": 2022,

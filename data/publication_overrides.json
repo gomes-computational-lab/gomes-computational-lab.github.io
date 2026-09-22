@@ -1,0 +1,77 @@
+{
+  "_instructions": [
+    "Use by_scholar_id when an author_pub_id is known; otherwise use the publication title.",
+    "Title matching is case-insensitive and ignores punctuation and repeated whitespace.",
+    "Supported publication_type values are peer_reviewed, posters_and_abstracts, and regional_ug.",
+    "Set exclude to true to omit a record. Any other fields replace or extend the generated record."
+  ],
+  "by_scholar_id": {
+    "s2LUBTQAAAAJ:LkGwnXOMwfcC": {
+      "exclude": true
+    },
+    "s2LUBTQAAAAJ:-f6ydRqryjwC": {
+      "exclude": true
+    },
+    "s2LUBTQAAAAJ:RGFaLdJalmkC": {
+      "exclude": true
+    },
+    "s2LUBTQAAAAJ:8k81kl-MbHgC": {
+      "exclude": true
+    },
+    "s2LUBTQAAAAJ:vV6vV6tmYwMC": {
+      "exclude": true
+    },
+    "s2LUBTQAAAAJ:4DMP91E08xMC": {
+      "exclude": true
+    },
+    "s2LUBTQAAAAJ:TFP_iSt0sucC": {
+      "exclude": true
+    },
+    "s2LUBTQAAAAJ:iH-uZ7U-co4C": {
+      "exclude": true
+    },
+    "s2LUBTQAAAAJ:_Qo2XoVZTnwC": {
+      "exclude": true
+    },
+    "s2LUBTQAAAAJ:9ZlFYXVOiuMC": {
+      "exclude": true
+    },
+    "s2LUBTQAAAAJ:roLk4NBRz8UC": {
+      "exclude": true
+    },
+    "s2LUBTQAAAAJ:SeFeTyx0c_EC": {
+      "publication_type": "posters_and_abstracts"
+    },
+    "s2LUBTQAAAAJ:Tyk-4Ss8FVUC": {
+      "publication_type": "peer_reviewed"
+    },
+    "s2LUBTQAAAAJ:ldfaerwXgEUC": {
+      "publication_type": "peer_reviewed"
+    },
+    "s2LUBTQAAAAJ:pqnbT2bcN3wC": {
+      "publication_type": "peer_reviewed"
+    },
+    "s2LUBTQAAAAJ:4OULZ7Gr8RgC": {
+      "publication_type": "peer_reviewed"
+    },
+    "s2LUBTQAAAAJ:fPk4N6BV_jEC": {
+      "publication_type": "peer_reviewed"
+    },
+    "s2LUBTQAAAAJ:zA6iFVUQeVQC": {
+      "publication_type": "peer_reviewed"
+    },
+    "s2LUBTQAAAAJ:ZHo1McVdvXMC": {
+      "publication_type": "peer_reviewed"
+    },
+    "s2LUBTQAAAAJ:rO6llkc54NcC": {
+      "publication_type": "peer_reviewed"
+    },
+    "s2LUBTQAAAAJ:g5m5HwL7SMYC": {
+      "publication_type": "peer_reviewed"
+    },
+    "s2LUBTQAAAAJ:2P1L_qKh6hAC": {
+      "publication_type": "peer_reviewed"
+    }
+  },
+  "by_title": {}
+}
