@@ -15,6 +15,20 @@
       "source": "google_scholar"
     },
     {
+      "title": "Colon-Pilot: a generative AI tool for automated colonoscopy surveillance recommendations and 2024 ACG/ASGE quality benchmarking",
+      "year": 2026,
+      "authors": "Sushil Kumar Garg; Brayden Mau; Jeffery Hubers; Victor Arce; Nicole Hooper; Jennifer Lindquist; Sarah B Harper; Ann B Thayer; Piyush Mukherjee; Brenna T Loufek; Joe Melnick; Lauren M Rost; Steven A Robbins; Rahul Gomes; Rajeev Chaudhary",
+      "venue": "American Journal of Gastroenterology",
+      "volume": "121",
+      "issue": "4",
+      "pages": "964-973",
+      "scholar_id": "s2LUBTQAAAAJ:SeFeTyx0c_EC",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&citation_for_view=s2LUBTQAAAAJ:SeFeTyx0c_EC",
+      "link": "https://journals.lww.com/ajg/abstract/10.14309/ajg.0000000000003946~colon-pilot-a-generative-ai-tool-for-automated-colonoscopy",
+      "citations": 6,
+      "source": "google_scholar"
+    },
+    {
       "title": "Distilling Knowledge in GI: An AI System for Assisting Colonoscopy and Pathology Report Review",
       "year": 2026,
       "authors": "Brayden Mau; Sushil Kumar Garg; Sarah B Harper; Rahul Gomes; Alexandra Rolli; Rajeev Chaudhry",
@@ -440,20 +454,6 @@
     }
   ],
   "posters_and_abstracts": [
-    {
-      "title": "Colon-Pilot: a generative AI tool for automated colonoscopy surveillance recommendations and 2024 ACG/ASGE quality benchmarking",
-      "year": 2026,
-      "authors": "Sushil Kumar Garg; Brayden Mau; Jeffery Hubers; Victor Arce; Nicole Hooper; Jennifer Lindquist; Sarah B Harper; Ann B Thayer; Piyush Mukherjee; Brenna T Loufek; Joe Melnick; Lauren M Rost; Steven A Robbins; Rahul Gomes; Rajeev Chaudhary",
-      "venue": "American Journal of Gastroenterology",
-      "volume": "121",
-      "issue": "4",
-      "pages": "964-973",
-      "scholar_id": "s2LUBTQAAAAJ:SeFeTyx0c_EC",
-      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&citation_for_view=s2LUBTQAAAAJ:SeFeTyx0c_EC",
-      "link": "https://journals.lww.com/ajg/abstract/10.14309/ajg.0000000000003946~colon-pilot-a-generative-ai-tool-for-automated-colonoscopy",
-      "citations": 6,
-      "source": "google_scholar"
-    },
     {
       "year": 2022,
       "title": "Automated IVC Filter Detection from Abdominopelvic CT Exams using Deep Learning",
