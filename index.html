@@ -3,90 +3,92 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home — Rahul Gomes</title>
+  <title>Gomes Computational Lab — Rahul Gomes</title>
+  <meta name="description" content="The Gomes Computational Lab develops artificial intelligence and scientific computing methods for healthcare, agriculture, immersive simulation, and high-performance computing." />
   <link rel="stylesheet" href="assets/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;family=Merriweather:wght@400;700&amp;display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="home-page">
   
 <div id="site-header"></div>
 
 
 <main>
-  <div class="container">
-<section class="hero hero-landing" aria-labelledby="welcome-title">
-  <div class="hero-content">
-    <div>
-      <div class="kicker">Welcome</div>
-      <p class="lead">
-        I am Rahul Gomes, Ph.D., an Associate Professor of Computer Science at the University of Wisconsin–Eau Claire, 
-        where I lead research, teaching, and mentorship in the rapidly evolving fields of artificial intelligence, 
-        machine learning, and computational science. My work spans healthcare AI, geospatial analytics, and deep learning, 
-        with a focus on building interpretable, impactful systems in collaboration with clinical, scientific, and community partners.
-      </p>
+  <div class="container home-container">
+    <section class="home-hero" aria-labelledby="home-title">
+      <div class="kicker">Gomes Computational Lab</div>
+      <h2 id="home-title">Rahul Gomes, Ph.D.</h2>
+      <p class="home-role">Associate Professor &amp; Chair, Computer Science<br />University of Wisconsin–Eau Claire</p>
+      <p class="home-focus"><span>Artificial Intelligence</span><span class="home-focus-separator" aria-hidden="true">·</span><span>Scientific Computing</span><span class="home-focus-separator" aria-hidden="true">·</span><span>Undergraduate Research</span></p>
+      <p class="home-intro">The lab develops AI and computational methods for healthcare, geospatial and agricultural science, immersive simulation, and high-performance computing.</p>
+      <nav class="home-actions" aria-label="Explore the Gomes Computational Lab">
+        <a class="btn" href="research.html">Research</a>
+        <a class="btn ghost" href="students.html">Students</a>
+        <a class="btn ghost" href="publications.html">Publications</a>
+        <a class="btn ghost" href="about.html">About</a>
+      </nav>
+    </section>
 
-      <p>
-        My research group develops advanced methods for medical image analysis, spatial transcriptomics, 
-        and AI-driven healthcare decision support—always with an emphasis on bridging the gap between algorithmic innovation 
-        and real-world application. We are passionate about interdisciplinary collaboration, engaging with fields such as biomedicine, 
-        geospatial analysis, and high-performance computing to tackle complex problems.
-      </p>
-
-      <p>
-        In the classroom, I strive to create hands-on, project-based learning experiences that prepare students for careers 
-        in AI and data science. Many of my students join my research group, gaining experience in cutting-edge projects, 
-        publishing in conferences and journals, and contributing to open-source tools.
-      </p>
-
-      <p>
-        This site highlights our ongoing projects, publications, grants, and media features, as well as the contributions 
-        of the talented students I have the privilege to mentor.
-      </p>
-
-      <p>
-        Whether you are a prospective student, a research collaborator, or an industry partner, 
-        I welcome you to explore our work and reach out for opportunities to connect.
-      </p>
-
-      <div class="hero-cta">
-        <a class="btn" href="research.html" aria-label="Explore research projects">Explore Research</a>
-        <a class="btn ghost" href="publications.html" aria-label="View publications">Publications</a>
-        <a class="btn ghost" href="contact.html" aria-label="Contact Rahul Gomes">Contact</a>
+    <section class="home-section" aria-labelledby="home-research-title">
+      <div class="home-section-heading">
+        <div>
+          <div class="kicker">What we are working on</div>
+          <h2 id="home-research-title">Current Research</h2>
+        </div>
+        <a class="home-section-link" href="research.html">View all research →</a>
       </div>
-
-      <ul class="quick-links" aria-label="Highlights">
-        <li>
-          <span class="pill">Research</span>
-          Medical imaging (IVCF, PDAC), scRNA-seq, RAG for clinical workflows, geospatial ML.
-        </li>
-        <li>
-          <span class="pill">Teaching</span>
-          Deep Learning, Web Systems, Programming Languages, Networks & Security.
-        </li>
-        <li>
-          <span class="pill">Students</span>
-          Hands-on projects, publications, and HPC-enabled undergraduate research.
-        </li>
-      </ul>
-    </div>
-
-    <figure class="hero-visual">
-      <!-- Optional right-side image -->
-      <img src="assets/hero.jpg" alt="Abstract visualization representing AI and data" onerror="this.style.display='none'"/>
-    </figure>
-  </div>
-</section>
-
-
-    <section>
-      <h3>Recent Updates</h3>
-      <div class="searchbar">
-        <input id="uSearch" type="search" placeholder="Search updates..."/>
+      <div class="home-research-grid">
+        <article class="home-research-card">
+          <h3>Healthcare AI</h3>
+          <p>Deep learning and clinical AI for medical imaging, cancer analysis, and decision support.</p>
+          <a href="research.html#current-research-title">Explore healthcare research →</a>
+        </article>
+        <article class="home-research-card">
+          <h3>GeoFarmAI</h3>
+          <p>Geospatial and machine-learning methods for interpretable precision-agriculture management zones.</p>
+          <a href="research.html#current-research-title">Explore GeoFarmAI →</a>
+        </article>
+        <article class="home-research-card">
+          <h3>AI-Enabled Simulation</h3>
+          <p>Multi-agent, locally hosted AI systems for immersive nursing education and clinical communication.</p>
+          <a href="research.html#current-research-title">Explore simulation research →</a>
+        </article>
+        <article class="home-research-card">
+          <h3>HPC &amp; AI Infrastructure</h3>
+          <p>Research computing that supports interdisciplinary computational science and student training.</p>
+          <a href="research.html#current-research-title">Explore computing research →</a>
+        </article>
       </div>
-      <div id="updates" class="list">
-        <p style="color:#666;font-style:italic;">Loading…</p>
+    </section>
+
+    <section class="home-section" aria-labelledby="home-publications-title">
+      <div class="home-section-heading">
+        <div>
+          <div class="kicker">Recent peer-reviewed work</div>
+          <h2 id="home-publications-title">Recent Publications</h2>
+        </div>
+        <a class="home-section-link" href="publications.html">View all publications →</a>
+      </div>
+      <div id="homePublications" class="home-publications" aria-live="polite">
+        <p class="home-loading">Loading publications…</p>
+      </div>
+    </section>
+
+    <section class="home-section home-updates" aria-labelledby="home-updates-title">
+      <div class="home-section-heading">
+        <div>
+          <div class="kicker">News from the lab</div>
+          <h2 id="home-updates-title">Recent Updates</h2>
+        </div>
+      </div>
+      <div class="searchbar home-update-search">
+        <label class="visually-hidden" for="uSearch">Search recent updates</label>
+        <input id="uSearch" type="search" placeholder="Search updates…" />
+      </div>
+      <div id="updates" class="list" aria-live="polite">
+        <p class="home-loading">Loading updates…</p>
       </div>
     </section>
   </div>

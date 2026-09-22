@@ -42,19 +42,59 @@ document.addEventListener("DOMContentLoaded", () => {
      */
     async function loadHome() {
         setLoading("updates");
-        const data = await fetchJSON("data/updates.json");
-        if (!data || !data.length) return setEmpty("updates");
+        setLoading("homePublications");
+        const [updates, publicationData] = await Promise.all([
+            fetchJSON("data/updates.json"),
+            fetchJSON("data/publications.json"),
+        ]);
+
+        const publicationsContainer = qs("homePublications");
+        const peerReviewed = Array.isArray(publicationData?.peer_reviewed)
+            ? [...publicationData.peer_reviewed]
+                .sort((a, b) => (Number(b.year) || 0) - (Number(a.year) || 0))
+                .slice(0, 4)
+            : [];
+
+        if (!publicationsContainer || !peerReviewed.length) {
+            setEmpty("homePublications");
+        } else {
+            publicationsContainer.innerHTML = "";
+            peerReviewed.forEach(publication => {
+                const title = publication.title || "Untitled publication";
+                const href = publication.link || (publication.doi ? `https://doi.org/${publication.doi}` : "");
+                const titleContent = href
+                    ? el("a", { href, target: "_blank", rel: "noopener" }, [title])
+                    : title;
+                const details = el("div", {}, [
+                    el("h3", {}, [titleContent]),
+                ]);
+
+                if (publication.authors) {
+                    details.appendChild(el("p", { class: "home-publication-authors" }, [publication.authors]));
+                }
+                if (publication.venue) {
+                    details.appendChild(el("p", { class: "home-publication-venue" }, [publication.venue]));
+                }
+
+                publicationsContainer.appendChild(el("article", { class: "home-publication" }, [
+                    el("div", { class: "home-publication-year" }, [String(publication.year || "—")]),
+                    details,
+                ]));
+            });
+        }
+
+        if (!updates || !updates.length) return setEmpty("updates");
 
         const searchEl = qs("uSearch");
         function render() {
-            const filtered = searchFilter(data, searchEl?.value, ["title", "detail", "date"])
+            const filtered = searchFilter(updates, searchEl?.value, ["title", "detail", "date"])
                 .sort((a, b) => b.date.localeCompare(a.date));
             const cont = qs("updates");
             cont.innerHTML = "";
             filtered.forEach(u => {
-                cont.appendChild(el("div", { class: "update" }, [
-                    el("div", { class: "small muted" }, [u.date]),
-                    el("div", { html: `<strong>${u.title}</strong>` }),
+                cont.appendChild(el("article", { class: "update" }, [
+                    el("time", { class: "small muted", datetime: u.date || "" }, [u.date || ""]),
+                    el("div", {}, [el("strong", {}, [u.title || "Untitled update"])]),
                     el("div", {}, [u.detail || ""])
                 ]));
             });
@@ -392,5 +432,3 @@ function escapeAttr(s){
             console.log(`No loader defined yet for ${page}`);
     }
 });
-
-
