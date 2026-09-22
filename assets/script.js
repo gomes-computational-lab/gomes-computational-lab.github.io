@@ -96,77 +96,6 @@ document.addEventListener("DOMContentLoaded", () => {
         render();
     }
 
-    /**
-     * About (about.html)
-     * Uses data/about.json:
-     * {
-     *   "bio_short": "...",
-     *   "education":[{"degree":"","inst":"","year":"","note":""}, ...],
-     *   "employment":[{"role":"","org":"","years":""}, ...],
-     *   "invited_talks":[{"year":2024,"title":"","venue":""}, ...],
-     *   "awards":[{"year":"2019","name":"","org":""}, ...]
-     * }
-     */
-    async function loadAbout() {
-        ["bio","education","employment","talks","awards"].forEach(setLoading);
-        const a = await fetchJSON("data/about.json");
-        if (!a) return ["bio","education","employment","talks","awards"].forEach(setEmpty);
-
-        // Bio
-        const bio = a.bio_short || a.bio || "";
-        qs("bio").innerHTML = bio ? `<p>${bio}</p>` : `<p style="color:#999;font-style:italic;">No content found.</p>`;
-
-        // Education
-        const edu = Array.isArray(a.education) ? a.education : [];
-        qs("education").innerHTML = edu.length
-          ? edu.map(e => `
-              <div class="list">
-                <div>
-                  <strong>${e.degree || ""}</strong><br/>
-                  <span class="meta">${e.inst || ""}${e.year ? " • " + e.year : ""}</span><br/>
-                  ${e.note ? `<span>${e.note}</span>` : ""}
-                </div>
-              </div>`).join("")
-          : `<p style="color:#999;font-style:italic;">No content found.</p>`;
-
-        // Employment
-        const emp = Array.isArray(a.employment) ? a.employment : [];
-        qs("employment").innerHTML = emp.length
-          ? emp.map(e => `
-              <div class="list">
-                <div>
-                  <strong>${e.role || ""}</strong> — ${e.org || ""}<br/>
-                  <span class="meta">${e.years || ""}</span>
-                </div>
-              </div>`).join("")
-          : `<p style="color:#999;font-style:italic;">No content found.</p>`;
-
-        // Invited Talks
-        const talks = (Array.isArray(a.invited_talks) ? a.invited_talks : []).sort((x,y)=> (y.year||0)-(x.year||0));
-        qs("talks").innerHTML = talks.length
-          ? talks.map(t => `
-              <div class="list">
-                <div>
-                  <strong>${t.title || ""}</strong><br/>
-                  <span class="meta">${t.venue || ""}${t.year ? " • " + t.year : ""}</span>
-                </div>
-              </div>`).join("")
-          : `<p style="color:#999;font-style:italic;">No content found.</p>`;
-
-        // Awards
-        const aw = Array.isArray(a.awards) ? a.awards : [];
-        qs("awards").innerHTML = aw.length
-          ? aw.map(w => `
-              <div class="list">
-                <div>
-                  <strong>${w.name || ""}</strong><br/>
-                  <span class="meta">${w.org || ""}${w.year ? " • " + w.year : ""}</span>
-                </div>
-              </div>`).join("")
-          : `<p style="color:#999;font-style:italic;">No content found.</p>`;
-    }
-
-
 async function loadGrants() {
   const bodyId = "grants";
   const searchId = "gSearch";
@@ -454,7 +383,6 @@ function escapeAttr(s){
     switch (page) {
         case "index.html":         loadHome(); break;
         case "publications.html":  loadPublications(); break;
-        case "about.html":         loadAbout(); break;
         case "research.html":      loadProjects(); break;     // ← cards here
         case "grants.html":        loadGrants(); break;
         case "media.html":          loadMedia(); break;
@@ -464,6 +392,5 @@ function escapeAttr(s){
             console.log(`No loader defined yet for ${page}`);
     }
 });
-
 
 

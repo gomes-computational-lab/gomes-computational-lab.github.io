@@ -281,5 +281,262 @@ blockquote{border-left:3px solid var(--accent); margin:0; padding:12px; backgrou
   border-radius: 6px;
 }
 
+/* About page: leadership profile */
+.about-page .about-container{
+  display:flex;
+  flex-direction:column;
+  gap:42px;
+}
+.about-page p{
+  line-height:1.65;
+}
+.about-page .about-profile{
+  padding:30px;
+  border:1px solid var(--border);
+  border-left:5px solid var(--accent);
+  border-radius:16px;
+  background:linear-gradient(135deg,#fff 55%,#f7f9fc);
+}
+.about-page .about-profile h2,
+.about-page .about-section-heading h2,
+.about-page .about-mentoring h2,
+.about-page .about-deeper-links h2{
+  margin:7px 0 14px;
+}
+.about-page .about-lead{
+  max-width:900px;
+  margin:0 0 12px;
+  color:#263445;
+  font-size:1.12rem;
+}
+.about-page .about-profile > p:not(.about-lead){
+  max-width:900px;
+}
+.about-page .about-link-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:20px;
+}
+.about-page .about-section{
+  margin:0;
+}
+.about-page .about-section-heading{
+  max-width:780px;
+  margin-bottom:18px;
+}
+.about-page .about-section-heading p{
+  margin-bottom:0;
+  color:var(--muted);
+}
+.about-page .about-role-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+}
+.about-page .about-role-card{
+  margin:0;
+  padding:20px;
+}
+.about-page .about-role-card h3,
+.about-page .about-theme-card h3,
+.about-page .about-leadership-grid h3{
+  margin:7px 0 9px;
+}
+.about-page .about-card-kicker{
+  color:#596579;
+  font-size:.78rem;
+  font-weight:700;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+.about-page .about-role-card p,
+.about-page .about-theme-card p{
+  margin:0 0 12px;
+}
+.about-page .about-text-link{
+  display:inline-block;
+  font-weight:700;
+}
+.about-page .about-theme-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+}
+.about-page .about-theme-card{
+  display:flex;
+  flex-direction:column;
+  margin:0;
+  padding:20px;
+}
+.about-page .about-theme-card .about-text-link{
+  margin-top:auto;
+}
+.about-page .about-theme-card-accent{
+  border-top:4px solid var(--accent);
+}
+.about-page .about-leadership-panel{
+  padding:26px;
+  border:1px solid var(--border);
+  border-radius:16px;
+  background:#fbfcfe;
+}
+.about-page .about-leadership-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:0;
+}
+.about-page .about-leadership-grid article{
+  padding:0 20px;
+  border-left:1px solid var(--border);
+}
+.about-page .about-leadership-grid article:first-child{
+  padding-left:0;
+  border-left:0;
+}
+.about-page .about-leadership-grid article:last-child{
+  padding-right:0;
+}
+.about-page .about-leadership-grid p{
+  margin:0 0 12px;
+}
+.about-page .about-panel-note{
+  margin:22px 0 0;
+  padding-top:18px;
+  border-top:1px solid var(--border);
+  color:var(--muted);
+}
+.about-page .about-mentoring{
+  padding:28px;
+  border:1px solid #dbe3ed;
+  border-radius:16px;
+  background:linear-gradient(135deg,#f7faff,#fff);
+}
+.about-page .about-mentoring-copy{
+  max-width:880px;
+}
+.about-page .about-award-line{
+  font-size:1.05rem;
+  font-weight:700;
+}
+.about-page .about-metrics{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
+  margin:22px 0 12px;
+}
+.about-page .about-metric{
+  padding:18px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:#fff;
+}
+.about-page .about-metric strong{
+  display:block;
+  margin-bottom:5px;
+  color:var(--link);
+  font-family:var(--serif);
+  font-size:1.8rem;
+}
+.about-page .about-metric span{
+  color:var(--muted);
+}
+.about-page .about-metric-context{
+  margin:0;
+  color:var(--muted);
+  font-size:.92rem;
+}
+.about-page .about-recognition-list{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:0 28px;
+  border-top:1px solid var(--border);
+}
+.about-page .about-recognition-item{
+  display:grid;
+  grid-template-columns:64px 1fr;
+  gap:14px;
+  padding:17px 0;
+  border-bottom:1px solid var(--border);
+}
+.about-page .about-recognition-item div{
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+}
+.about-page .about-recognition-item div span{
+  color:var(--muted);
+  font-size:.9rem;
+  line-height:1.45;
+}
+.about-page .about-recognition-year{
+  color:var(--link);
+  font-weight:700;
+}
+.about-page .about-recognition-wide{
+  grid-column:1 / -1;
+}
+.about-page .about-deeper-links{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  padding:24px;
+  border:1px solid var(--border);
+  border-radius:16px;
+  background:#fffef5;
+}
+.about-page .about-deeper-links .about-link-row{
+  justify-content:flex-end;
+  margin-top:0;
+}
+.about-page .btn:focus-visible,
+.about-page .about-text-link:focus-visible{
+  outline:3px solid var(--accent);
+  outline-offset:3px;
+}
+@media (max-width:900px){
+  .about-page .about-theme-grid,
+  .about-page .about-leadership-grid{
+    grid-template-columns:1fr;
+  }
+  .about-page .about-leadership-grid article{
+    padding:18px 0;
+    border-left:0;
+    border-top:1px solid var(--border);
+  }
+  .about-page .about-leadership-grid article:first-child{
+    padding-top:0;
+    border-top:0;
+  }
+  .about-page .about-leadership-grid article:last-child{
+    padding-bottom:0;
+  }
+  .about-page .about-deeper-links{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+  .about-page .about-deeper-links .about-link-row{
+    justify-content:flex-start;
+  }
+}
+@media (max-width:680px){
+  .about-page .about-container{
+    gap:32px;
+  }
+  .about-page .about-profile,
+  .about-page .about-leadership-panel,
+  .about-page .about-mentoring{
+    padding:20px;
+  }
+  .about-page .about-role-grid,
+  .about-page .about-metrics,
+  .about-page .about-recognition-list{
+    grid-template-columns:1fr;
+  }
+  .about-page .about-recognition-wide{
+    grid-column:auto;
+  }
+}
 
 

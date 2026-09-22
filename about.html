@@ -7,41 +7,177 @@
   <link rel="stylesheet" href="assets/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;family=Merriweather:wght@400;700&amp;display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="about-page">
   
 <div id="site-header"></div>
 
 <main>
-  <div class="container">
+  <div class="container about-container">
+    <section class="about-profile" aria-labelledby="professional-profile-title">
+      <div class="kicker">Academic leadership · AI research · Undergraduate mentorship</div>
+      <h2 id="professional-profile-title">Professional Profile</h2>
+      <p class="about-lead">
+        I am an Associate Professor and Chair of Computer Science at the University of Wisconsin–Eau Claire. My work focuses on artificial intelligence, machine learning, and high-performance computing, with applications in healthcare, scientific computing, and precision agriculture.
+      </p>
+      <p>
+        I lead NSF-supported undergraduate research, collaborate with Mayo Clinic’s AI &amp; Informatics team, and help build AI curricula, institutional strategy, and research cyberinfrastructure.
+      </p>
+      <div class="about-link-row" aria-label="Professional profiles">
+        <a class="btn" href="cv.html">View CV</a>
+        <a class="btn ghost" href="https://scholar.google.com/citations?user=s2LUBTQAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a class="btn ghost" href="https://github.com/gomes-computational-lab" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn ghost" href="https://www.uwec.edu/profiles/gomesr/" target="_blank" rel="noopener">UWEC Profile</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/rahul-gomes/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
 
-    <h2>Biography</h2>
-    <div id="bio"><p style="color:#666;font-style:italic;">Loading…</p></div>
+    <section class="about-section" aria-labelledby="appointments-title">
+      <div class="about-section-heading">
+        <h2 id="appointments-title">Current Leadership &amp; Appointments</h2>
+      </div>
+      <div class="about-role-grid">
+        <article class="card about-role-card">
+          <div class="about-card-kicker">University of Wisconsin–Eau Claire</div>
+          <h3>Chair, Department of Computer Science</h3>
+          <p>Leads the department and its evolving computing programs.</p>
+        </article>
+        <article class="card about-role-card">
+          <div class="about-card-kicker">University of Wisconsin–Eau Claire</div>
+          <h3>Associate Professor of Computer Science</h3>
+          <p>Research emphasis: artificial intelligence, machine learning, high-performance computing, and interdisciplinary applications.</p>
+        </article>
+        <article class="card about-role-card">
+          <div class="about-card-kicker">Mayo Clinic</div>
+          <h3>Research Temporary Professional</h3>
+          <p>Works with Mayo Clinic’s AI &amp; Informatics (AI&amp;I) team on undergraduate research internships and applied healthcare AI collaborations.</p>
+          <a class="about-text-link" href="https://www.uwec.edu/stories/blugold-published-national-journal-continues-improve-patient-care" target="_blank" rel="noopener">Healthcare collaboration →</a>
+        </article>
+        <article class="card about-role-card">
+          <div class="about-card-kicker">Research cyberinfrastructure</div>
+          <h3>Faculty Coordinator, Blugold Center for High Performance Computing</h3>
+          <p>Supports research computing, AI/HPC infrastructure, interdisciplinary computational research, and student access and training.</p>
+          <a class="about-text-link" href="https://www.uwec.edu/offices-services/blugold-center-high-performance-computing" target="_blank" rel="noopener">Explore the HPC center →</a>
+        </article>
+      </div>
+    </section>
 
-    <div class="grid">
-      <div class="left">
-        <div class="card">
-          <h3>Education</h3>
-          <div id="education"><p style="color:#666;font-style:italic;">Loading…</p></div>
+    <section class="about-section" aria-labelledby="research-infrastructure-title">
+      <div class="about-section-heading">
+        <h2 id="research-infrastructure-title">Research &amp; Research Infrastructure</h2>
+      </div>
+      <div class="about-theme-grid">
+        <article class="card about-theme-card">
+          <h3>AI for Healthcare</h3>
+          <p>Medical imaging, pancreatic cancer, clinical AI, healthcare decision support, and multi-agent immersive healthcare simulation.</p>
+          <a class="about-text-link" href="research.html">Explore healthcare AI →</a>
+        </article>
+        <article class="card about-theme-card">
+          <h3>AI for Science</h3>
+          <p>Precision agriculture, geospatial AI, scientific machine learning, and data-intensive interdisciplinary research.</p>
+          <a class="about-text-link" href="research.html">Explore AI for science →</a>
+        </article>
+        <article class="card about-theme-card about-theme-card-accent">
+          <h3>AI &amp; HPC Infrastructure</h3>
+          <p>GPU and HPC infrastructure supporting interdisciplinary research, student access, and training at computational scale.</p>
+          <a class="about-text-link" href="https://www.uwec.edu/offices-services/blugold-center-high-performance-computing" target="_blank" rel="noopener">Blugold HPC resources →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section about-leadership-panel" aria-labelledby="ai-leadership-title">
+      <div class="about-section-heading">
+        <h2 id="ai-leadership-title">AI Education &amp; Institutional Leadership</h2>
+      </div>
+      <div class="about-leadership-grid">
+        <article>
+          <h3>AI Program Development</h3>
+          <p>Contributed to curriculum and coursework development, stakeholder engagement, continued curriculum planning, and work toward an external AI advisory board.</p>
+          <a class="about-text-link" href="https://www.uwec.edu/stories/uwec-will-offer-ai-majors-starting-fall-2025" target="_blank" rel="noopener">AI majors launched in fall 2025 →</a>
+        </article>
+        <article>
+          <h3>Campus AI Strategy</h3>
+          <p>Participates in campus AI strategy discussions initiated by Chancellor Carney, focusing on instructional and operational tools, infrastructure, policy, institutional priorities, and student outcomes.</p>
+        </article>
+        <article>
+          <h3>Campus AI Conversations</h3>
+          <p>Works with university administration and CETL to develop recurring conversations that help faculty and staff engage with emerging AI tools, opportunities, and challenges.</p>
+          <a class="about-text-link" href="https://www.uwec.edu/offices-services/center-excellence-teaching-and-learning" target="_blank" rel="noopener">About CETL →</a>
+        </article>
+      </div>
+      <p class="about-panel-note">Broader engagement includes participation with students in an AI panel before the Universities of Wisconsin Board of Regents.</p>
+    </section>
+
+    <section class="about-section about-mentoring" aria-labelledby="mentoring-title">
+      <div class="about-mentoring-copy">
+        <h2 id="mentoring-title">Undergraduate Research &amp; Mentoring</h2>
+        <p class="about-award-line">Recipient of the <a href="https://www.cur.org/membership-community/divisions/mathematical-computing-statistical-sciences-division/divisions-mathematical-computing-statistical-sciences-mentor-award/" target="_blank" rel="noopener">2026 CUR Mathematical, Computing, and Statistical Sciences Mid-Career Faculty Mentor Award</a>.</p>
+        <p>My mentoring combines NSF REU leadership, interdisciplinary and HPC-enabled research, and Mayo Clinic internships, preparing students for publications, presentations, and further study.</p>
+      </div>
+      <div class="about-metrics" aria-label="Undergraduate mentoring highlights">
+        <div class="about-metric">
+          <strong>72</strong>
+          <span>undergraduate researchers mentored</span>
         </div>
-        <div class="card">
-          <h3>Employment</h3>
-          <div id="employment"><p style="color:#666;font-style:italic;">Loading…</p></div>
+        <div class="about-metric">
+          <strong>17</strong>
+          <span>peer-reviewed articles with mentees</span>
+        </div>
+        <div class="about-metric">
+          <strong>NSF REU</strong>
+          <span>principal investigator</span>
         </div>
       </div>
-      <div class="right">
-        <div class="card">
-          <h3>Invited Talks</h3>
-          <div id="talks"><p style="color:#666;font-style:italic;">Loading…</p></div>
+      <p class="about-metric-context">This work also includes 34 institutional and regional conference presentations and 23 CERCA poster presentations involving 53 students.</p>
+      <div class="about-link-row">
+        <a class="btn" href="students.html">Students &amp; Mentoring</a>
+        <a class="btn ghost" href="grants.html">Research Grants</a>
+        <a class="btn ghost" href="https://www.uwec.edu/stories/mentoring-record-brings-national-award-uw-eau-claires-dr-rahul-gomes" target="_blank" rel="noopener">Mentoring Award Profile</a>
+      </div>
+    </section>
+
+    <section class="about-section" aria-labelledby="recognition-title">
+      <div class="about-section-heading">
+        <h2 id="recognition-title">Selected Recognition</h2>
+      </div>
+      <div class="about-recognition-list">
+        <div class="about-recognition-item">
+          <span class="about-recognition-year">2026</span>
+          <div><strong>CUR Mid-Career Faculty Mentor Award</strong><span>Mathematical, Computing, and Statistical Sciences</span></div>
         </div>
-        <div class="card">
-          <h3>Awards & Scholarships</h3>
-          <div id="awards"><p style="color:#666;font-style:italic;">Loading…</p></div>
+        <div class="about-recognition-item">
+          <span class="about-recognition-year">2024</span>
+          <div><strong>Collaborator of the Year</strong><span>Mayo Clinic Health System Northwest Wisconsin</span></div>
+        </div>
+        <div class="about-recognition-item">
+          <span class="about-recognition-year">2024</span>
+          <div><strong>Emerging Mentor in Research, Scholarship and Creative Activity</strong><span>University of Wisconsin–Eau Claire</span></div>
+        </div>
+        <div class="about-recognition-item">
+          <span class="about-recognition-year">2024</span>
+          <div><strong>General Chair, IEEE International Conference on Electro/Information Technology</strong><span>Academic and professional service</span></div>
+        </div>
+        <div class="about-recognition-item about-recognition-wide">
+          <span class="about-recognition-year">NSF</span>
+          <div><strong>Research Program Leadership</strong><span>Principal Investigator, NSF REU Site · Co-Principal Investigator, NSF RET/TARCC</span></div>
         </div>
       </div>
-    </div>
+    </section>
 
+    <nav class="about-deeper-links" aria-label="Explore Rahul Gomes's work">
+      <div>
+        <h2>Explore Further</h2>
+      </div>
+      <div class="about-link-row">
+        <a class="btn" href="research.html">Explore Research</a>
+        <a class="btn ghost" href="publications.html">View Publications</a>
+        <a class="btn ghost" href="grants.html">Research Grants</a>
+        <a class="btn ghost" href="students.html">Students</a>
+        <a class="btn ghost" href="teaching.html">Teaching</a>
+        <a class="btn ghost" href="cv.html">View CV</a>
+      </div>
+    </nav>
   </div>
 </main>
   
